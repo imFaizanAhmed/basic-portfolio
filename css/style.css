@@ -52,6 +52,7 @@ img {
 #intro {
   padding: 4rem 1rem 10rem 1rem;
   margin-top: 102px;
+  min-height: calc(100vh - 104px);
 }
 
 #intro p {
@@ -255,6 +256,7 @@ footer ul {
 
   #intro {
     margin-top: 70px;
+    min-height: calc(100vh - 72px);
   }
 
   nav li:first-child {
@@ -267,12 +269,14 @@ footer ul {
 @media (max-width: 562px) {
   #intro {
     margin-top: 134px;
+    min-height: calc(100vh - 136px);
   }
 }
 
 @media (max-width: 344px) {
   #intro {
     margin-top: 166px;
+    min-height: calc(100vh - 168px);
   }
 }
 
