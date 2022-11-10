@@ -12,6 +12,19 @@
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
 }
+
+.light-theme {
+  /* for section backgrounds */
+  --primary: #fff;
+  --primary-shade2: #fff;
+  /* for text backgrounds */
+  --text-color: #222;
+  --text-color-shade2: #198754;
+  /* for buttons */
+  --button-color: #198754;
+  --button-color-shade2: #44ca8c;
+}
+
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
   box-sizing: border-box;
@@ -26,8 +39,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--primary);
+  color: var(--text-color);
   font-size: var(--font-size);
 }
 h1,
@@ -37,58 +50,93 @@ h4 {
   margin: 0;
 }
 a {
-  color: var(--magenta);
+  color: var(--button-color);
 }
 
 a:hover {
-  color: var(--hotmag);
   text-decoration: none;
 }
 
 img {
   width: 100%;
 }
+
+pre {
+  margin: 0px;
+}
 /* intro styles */
 #intro {
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 0rem 2rem;
   margin-top: 102px;
   min-height: calc(100vh - 104px);
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 1fr repeat(2, auto) 1fr;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+}
+
+#into div {
+  min-width: 620px;
 }
 
 #intro p {
   font-size: 1rem;
   line-height: 1.5;
-  grid-column: 1/6;
 }
 
 #intro .name {
   font-family: var(--mono);
   font-size: 1rem;
-  grid-row: 1/2;
-  display: grid;
-  align-items: end;
-  grid-template-rows: 1fr;
+  margin: 0px;
 }
 
 .name span {
   font-family: var(--sans);
   font-size: 4rem;
-  color: var(--aqua);
+  color: var(--text-color);
+  font-weight: bold;
   display: block;
   font-weight: 300;
 }
 
 #intro h2 {
   font-size: 3rem;
-  grid-column: 1/6;
 }
 
-#intro .svg {
-  grid-column: 6/11;
-  grid-row: 1/3;
+.typed-text {
+  font-weight: normal;
+  color: var(--text-color-shade2);
+}
+
+.cursor {
+  display: inline-block;
+  background-color: var(--text-color-shade2);
+  margin-left: 0.1rem;
+  width: 3px;
+  height: 3rem;
+  animation: blink 1s infinite;
+}
+
+.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--text-color-shade2);
+  }
+  49% {
+    background-color: var(--text-color-shade2);
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--text-color-shade2);
+  }
 }
 
 @media (max-width: 768px) {
@@ -106,7 +154,7 @@ img {
   width: 400px;
   text-align: center;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 
 #contact p:last-child {
@@ -120,9 +168,10 @@ nav {
   padding: 1rem;
   position: fixed;
   top: 0px;
-  background-color: var(--green);
+  background-color: var(--primary-shade2);
   opacity: 0.95;
   width: 100vw;
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
 }
 
 nav h1 a {
@@ -131,7 +180,7 @@ nav h1 a {
 
 nav ul {
   margin: 0;
-  padding: 0 3rem 0 0;
+  padding: 0 2rem 0 1rem;
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
@@ -139,46 +188,63 @@ nav ul {
   align-items: center;
   gap: 2rem;
 }
+
+nav li > a:not(.Call-to-action-button):not([class*="fa-"]) {
+  height: 32px;
+}
+
+nav h1 a:hover,
+nav li > a:hover:not(.Call-to-action-button):not([class*="fa-"]) {
+  border-bottom: 2px solid var(--button-color);
+}
+
+nav li > a:not(.Call-to-action-button) {
+  display: flex;
+  align-items: center;
+}
+
 nav li:first-child {
   flex-basis: 100%;
   text-align: center;
 }
 nav [class*="fa-"] {
   font-size: 150%;
-  color: var(--aqua);
+  color: var(--text-color);
 }
 nav h1 [class*="fa-"] {
   font-size: 100%;
-  color: var(--aqua);
+  color: var(--button-color);
 }
 
 nav a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   display: block;
 }
 
-nav a:hover,
+/* nav a:hover,
 nav [class*="fa-"]:hover {
-  color: var(--magenta);
-}
+  color: var(--button-color-shade2);
+} */
 
 .Call-to-action-button {
-  background-color: var(--magenta);
+  background-color: var(--button-color);
   padding: 0.5rem;
   border-radius: 5px;
   font-family: var(--mono);
   text-decoration: none;
-  color: var(--white);
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .Call-to-action-button:hover {
-  color: var(--white);
-  background-color: var(--hotmag);
+  color: var(--primary-shade2);
+  background-color: var(--button-color-shade2);
 }
 
 #projects {
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
+  background-color: var(--primary);
 }
 
 #projects h2 {
@@ -259,7 +325,7 @@ nav [class*="fa-"]:hover {
 
 footer {
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 footer ul {
@@ -281,6 +347,9 @@ footer ul {
   #intro {
     margin-top: 70px;
     min-height: calc(100vh - 72px);
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   nav li:first-child {
@@ -323,10 +392,6 @@ footer ul {
 }
 
 .gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 23, 228, 1) 0%,
-    rgba(134, 251, 251, 1) 100%
-  );
+  background: linear-gradient(135deg, #616161 10%, #bebebe 100%);
   height: 2px;
 }
