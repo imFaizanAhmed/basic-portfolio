@@ -26,6 +26,29 @@
   /* gradient color */
   --gradient-color: #c8c8c8;
   --gradient-color-shade2: #706f6f;
+  /* bg image */
+  --background-image: url("/img/background.jpg");
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.dark-theme {
+  /* for section backgrounds */
+  --primary: rgb(42 42 42);
+  --primary-shade2: #222;
+  /* for text backgrounds */
+  --text-color: #fcfbfe;
+  --text-color-shade2: #f9004d;
+  /* for buttons */
+  --button-color: #f9004d;
+  --button-color-shade2: #db0045;
+  /* gradient color */
+  --gradient-color: #c8c8c8;
+  --gradient-color-shade2: #706f6f;
+  /* bg image */
+  --background-image: url("/img/dark\ background.png");
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-in-out;
 }
 
 /* border box model: https://css-tricks.com/box-sizing/ */
@@ -71,6 +94,13 @@ img {
 pre {
   margin: 0px;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* intro styles */
 #intro {
   padding: 0rem 2rem;
@@ -123,28 +153,11 @@ pre {
   width: 3px;
   height: 3rem;
   animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
 }
 
 .cursor.typing {
   animation: none;
-}
-
-@keyframes blink {
-  0% {
-    background-color: var(--text-color-shade2);
-  }
-  49% {
-    background-color: var(--text-color-shade2);
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: var(--text-color-shade2);
-  }
 }
 
 @media (max-width: 768px) {
@@ -181,6 +194,49 @@ nav {
   width: 100vw;
   box-shadow: 0 0px 15px 0 rgb(0 0 0 / 10%);
   z-index: 100;
+}
+
+nav .theme-icon {
+  width: calc(2rem - 4px);
+  aspect-ratio: 1/1;
+  margin-left: 1rem;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+nav .theme-icon:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.tooltip {
+  position: fixed;
+  visibility: hidden;
+  top: 4rem;
+  left: 170px;
+  cursor: pointer;
+  padding: 0.5rem;
+  overflow: hidden;
+  width: 136px;
+  white-space: nowrap;
+  background-color: var(--text-color);
+  color: var(--primary);
+  opacity: 0.5;
+  border-radius: 0.5rem;
+}
+
+.theme-icon:hover + .tooltip {
+  visibility: visible;
+  animation: tooltip-animation 0.5s;
+  -moz-animation: tooltip-animation 0.5s;
 }
 
 nav h1 a {
@@ -373,11 +429,17 @@ footer a span:hover {
 
 #timeline {
   background-color: var(--primary-shade2);
+  padding: 4rem 2rem;
+}
+
+#timeline h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem);
 }
 
 .timeline {
   position: relative;
-  width: 660px;
+  width: 776px;
   margin: 0 auto;
   /* margin-top: 20px; */
   padding: 1em 0;
@@ -452,14 +514,14 @@ footer a span:hover {
 
 .direction-l {
   position: relative;
-  width: 300px;
+  width: 358px;
   float: left;
   text-align: right;
 }
 
 .direction-r {
   position: relative;
-  width: 300px;
+  width: 357px;
   float: right;
 }
 
@@ -473,7 +535,7 @@ footer a span:hover {
 .flag {
   position: relative;
   display: inline;
-  background: rgb(248, 248, 248);
+  background: var(--primary);
   padding: 6px 10px;
   border-radius: 5px;
 
@@ -682,9 +744,10 @@ footer a span:hover {
   #intro {
     margin-top: 70px;
     min-height: calc(100vh - 72px);
-    background-image: url("/img/background.jpg");
+    background-image: var(--background-image);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background-image 1s ease-in-out;
   }
 
   nav li:first-child {
@@ -710,7 +773,7 @@ footer a span:hover {
 
 /* background color div */
 .section-hightligh {
-  background-color: var(--text-color-shade2);
+  background-color: var(--primary-shade2);
 }
 
 .section-blue {

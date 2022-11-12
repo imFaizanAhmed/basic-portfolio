@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/animation.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
@@ -17,49 +18,56 @@
   <nav>
     <ul>
       <li>
-        <h1>
-          <a href="index.html">
-            <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
-            <span>
-              F
-            </span>
-            <!-- 
+        <div class="flex">
+          <h1>
+            <a class="flex" href="index.html">
+              <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
+              <span>
+                F
+              </span>
+              <!-- 
             --><span>
-              a
-            </span>
-            <!-- 
+                a
+              </span>
+              <!-- 
             --><span>
-              i
-            </span>
-            <span>
-              z
-            </span>
-            <span>
-              a
-            </span>
-            <span>
-              n
-            </span>
-            <span>
-              &nbsp;
-            </span>
-            <span>
-              A
-            </span>
-            <span>
-              h
-            </span>
-            <span>
-              m
-            </span>
-            <span>
-              e
-            </span>
-            <span>
-              d
-            </span>
-          </a>
-        </h1>
+                i
+              </span>
+              <span>
+                z
+              </span>
+              <span>
+                a
+              </span>
+              <span>
+                n
+              </span>
+              <span>
+                &nbsp;
+              </span>
+              <span>
+                A
+              </span>
+              <span>
+                h
+              </span>
+              <span>
+                m
+              </span>
+              <span>
+                e
+              </span>
+              <span>
+                d
+              </span>
+            </a>
+          </h1>
+
+          <div class="theme-icon">
+            <img id="theme-icon" src="/img/sun-black.svg" />
+          </div>
+          <span class="tooltip">Change Theme</span>
+        </div>
       </li>
       <li><a href="#projects"> Projects </a></li>
       <li><a href="about.html"> About </a></li>
@@ -93,12 +101,15 @@
   <div class="gradient"></div>
 
   <section id="timeline">
+    <h2>
+      My path till now
+    </h2>
     <ul class="timeline">
 
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="flag">Freelancer</span>
+            <span class="flag">Numuworld</span>
             <span class="time-wrapper"><span class="time">2013 - present</span></span>
           </div>
           <div class="desc">My current employment. Way better than the position before!</div>
@@ -108,7 +119,16 @@
       <li>
         <div class="direction-l">
           <div class="flag-wrapper">
-            <span class="flag">Apple Inc.</span>
+            <span class="flag">CHI</span>
+            <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+          </div>
+          <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+        </div>
+      </li>
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">Cognitive Healthcare International</span>
             <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
           </div>
           <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
@@ -118,8 +138,8 @@
       <li>
         <div class="direction-r">
           <div class="flag-wrapper">
-            <span class="flag">Harvard University</span>
-            <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+            <span class="flag">FAST University</span>
+            <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
           </div>
           <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
         </div>
@@ -191,7 +211,7 @@
         alt="Screenshot of the Wall of Wonder." />
     </article>
   </section>
-  <!-- <div class="gradient"></div> -->
+  <div class="gradient"></div>
   <div class="section-hightligh">
     <section id="contact">
       <h2> Contact Me </h2>
@@ -203,7 +223,7 @@
       </p>
     </section>
   </div>
-  <!-- <div class="gradient"></div> -->
+  <div class="gradient"></div>
   <footer>
     <h2>
       Faizan Ahmed &middot; Fullstack Developer
@@ -229,7 +249,9 @@
     </ul>
     <p><small>&copy; 2021 Faizan Ahmed. All rights reserved.</small></p>
   </footer>
+
   <script src="/js/typing-effect.js"></script>
+  <script src="/js/change-theme.js"></script>
 </body>
 
 </html>
