@@ -26,6 +26,9 @@
   /* gradient color */
   --gradient-color: #c8c8c8;
   --gradient-color-shade2: #706f6f;
+  /* shadow */
+  --shadow: rgba(0, 0, 0, 0.15);
+  --highlighted-section: #98ffcf;
   /* bg image */
   --background-image: url("/img/background.jpg");
   transition: all 1s ease-out;
@@ -45,6 +48,9 @@
   /* gradient color */
   --gradient-color: #c8c8c8;
   --gradient-color-shade2: #706f6f;
+  /* shadow */
+  --shadow: rgba(225, 225, 225, 0.15);
+  --highlighted-section: #780025;
   /* bg image */
   --background-image: url("/img/dark\ background.png");
   transition: all 1s ease-out;
@@ -172,7 +178,7 @@ pre {
 
 /* contact section */
 #contact {
-  width: 400px;
+  width: 800px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 1rem;
@@ -192,7 +198,7 @@ nav {
   background-color: var(--primary);
   opacity: 0.95;
   width: 100vw;
-  box-shadow: 0 0px 15px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0px 15px 0 var(--shadow);
   z-index: 100;
 }
 
@@ -296,6 +302,10 @@ nav a {
   color: var(--text-color);
   text-decoration: none;
   display: block;
+}
+
+.alias {
+  cursor: alias;
 }
 
 /* nav a:hover,
@@ -417,6 +427,7 @@ footer ul {
 
 footer a {
   color: var(--text-color);
+  cursor: alias;
 }
 
 footer a:hover {
@@ -519,6 +530,10 @@ footer a span:hover {
   text-align: right;
 }
 
+.move-from-right {
+  animation: move-from-right 5s ease-in;
+}
+
 .direction-r {
   position: relative;
   width: 357px;
@@ -543,18 +558,22 @@ footer a span:hover {
   text-align: left;
 }
 
+.flag a {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: alias;
+}
+
 .direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
-    0 0 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: -1px 1px 1px var(--shadow), 0 0 1px var(--shadow);
+  -moz-box-shadow: -1px 1px 1px var(--shadow), 0 0 1px var(--shadow);
+  box-shadow: -1px 1px 1px var(--shadow), 0 0 1px var(--shadow);
 }
 
 .direction-r .flag {
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15),
-    0 0 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 1px 1px var(--shadow), 0 0 1px var(--shadow);
+  -moz-box-shadow: 1px 1px 1px var(--shadow), 0 0 1px var(--shadow);
+  box-shadow: 1px 1px 1px var(--shadow), 0 0 1px var(--shadow);
 }
 
 .direction-l .flag:before,
@@ -585,7 +604,7 @@ footer a span:hover {
   width: 0;
   margin-top: -8px;
   border: solid transparent;
-  border-left-color: rgb(248, 248, 248);
+  border-left-color: var(--text-color);
   border-width: 8px;
   pointer-events: none;
 }
@@ -599,7 +618,7 @@ footer a span:hover {
   width: 0;
   margin-top: -8px;
   border: solid transparent;
-  border-right-color: rgb(248, 248, 248);
+  border-right-color: var(--text-color);
   border-width: 8px;
   pointer-events: none;
 }
@@ -633,6 +652,10 @@ footer a span:hover {
   font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
+}
+
+.desc span {
+  color: var(--text-color-shade2);
 }
 
 .direction-r .desc {
@@ -716,9 +739,9 @@ footer a span:hover {
     margin: 1em 0 0 0;
     padding: 1em;
     background: rgb(245, 245, 245);
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 1px desc;
+    -moz-box-shadow: 0 0 1px desc;
+    box-shadow: 0 0 1px desc;
   }
 
   .direction-l .desc,
@@ -732,7 +755,7 @@ footer a span:hover {
 @media screen and (min-width: 400px) {
   .direction-l .desc,
   .direction-r .desc {
-    margin: 1em 4em 0 4em;
+    margin: 1em 3em 0 3em;
   }
 }
 
@@ -773,7 +796,7 @@ footer a span:hover {
 
 /* background color div */
 .section-hightligh {
-  background-color: var(--primary-shade2);
+  background-color: var(--highlighted-section);
 }
 
 .section-blue {
