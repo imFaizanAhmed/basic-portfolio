@@ -30,7 +30,7 @@
   --shadow: rgba(0, 0, 0, 0.15);
   --highlighted-section: #98ffcf;
   /* bg image */
-  --background-image: url("/img/background.jpg");
+  --background-image: url("img/background.jpg");
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
 }
@@ -52,7 +52,7 @@
   --shadow: rgba(225, 225, 225, 0.15);
   --highlighted-section: #780025;
   /* bg image */
-  --background-image: url("/img/dark\ background.png");
+  --background-image: url("img/dark\ background.png");
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
 }
