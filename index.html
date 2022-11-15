@@ -14,7 +14,7 @@
   <title>Faizan Ahmed's Portfolio Website</title>
 </head>
 
-<body class="light-theme">
+<body class="dark-theme">
   <nav>
     <ul>
       <li>
@@ -64,14 +64,14 @@
           </h1>
 
           <div class="theme-icon">
-            <img id="theme-icon" src="/img/sun-black.svg" />
+            <img id="theme-icon" src="/img/moon-icon.svg" />
           </div>
           <span class="tooltip">Change Theme</span>
         </div>
       </li>
-      <li><a href="#projects"> Projects </a></li>
-      <li><a href="about.html"> About </a></li>
-      <li><a href="#contact"> Contact </a></li>
+      <li><a id="project-button" class="pointer"> Projects </a></li>
+      <li><a id="about-button" href="about.html"> About </a></li>
+      <li><a id="contact-button" class="pointer"> Contact </a></li>
       <li>
         <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank" class="alias">
           <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
@@ -91,7 +91,7 @@
       <h2 style="display: flex; align-items: center">
         <pre>I'm a </pre><span class="typed-text"></span> <span class="cursor"></span>
       </h2>
-      <p>I'm an professional Software Engineer, open to work as a full-stack blockchain
+      <p>I'm a professional Software Engineer, open to work as a full-stack blockchain
         developer.
       </p>
       <p>Currently, I'm working as Full-stack developer at <a href="https://numuworld.com/" target="_blank">Numu
@@ -125,7 +125,7 @@
                 International</a></span>
             <span class="time-wrapper"><span class="time" style="margin-top: 4px;">July 2021 - July 2022</span></span>
           </div>
-          <div class="desc">My first employment. I designated as Fullstack developed. I worked in <span>Angular</span>
+          <div class="desc">My first employment. I designated as Fullstack developed. I worked on <span>Angular</span>
             - <span>Python</span>
             - <span>MySQL</span>.</div>
         </div>
@@ -155,17 +155,18 @@
     <article>
       <div class="text">
         <!-- <h4>Latest Project</h4> -->
-        <h3>Wall of Wonder</h3>
-        <p class="blackbox">Description of the project. This should be fairly concise while also describing the key
-          components that you developed or worked on. It can be as long as you need it to be but should at least be a
-          few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a
-            href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look <a href="#">like
-            this</a> and <a href="#">like this</a>. </p>
+        <h3>Find Trends</h3>
+        <p class="blackbox">A single page real-time customers feedback application. It gets tweets about the product
+          using TweepyAPI
+          and applies sentiment analysis to predict the people's views. It stores the tweets and their sentiments on
+          database for future use. View this
+          project <a href="https://github.com/imFaizanAhmed/find-trend" target="_blank" class="alias">here</a>. </p>
         <h4>Technologies used include</h4>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SVG</li>
+          <li>Django</li>
+          <li>Bootstrap</li>
+          <li>TweepyAPI</li>
+          <li>Sqlite</li>
         </ul>
       </div>
       <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
@@ -174,25 +175,23 @@
     <article class="reverse">
       <div class="text">
         <!-- <h4>Latest Project</h4> -->
-        <h3>Wall of Wonder</h3>
-        <p class="blackbox">Description of the project. This should be fairly concise while also describing the key
-          components that you developed or worked on. It can be as long as you need it to be but should at least be a
-          few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a
-            href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look <a href="#">like
-            this</a> and <a href="#">like this</a>. </p>
+        <h3>Web Portfolio</h3>
+        <p class="blackbox">A single page web application. It is created to showcase my skills, and knowledge about web
+          development basis. You can view the source code <a href="https://frontendmasters.github.io/grid-flexbox-v2/"
+            target="_blank" class="alias">here</a>.
         <h4>Technologies used include</h4>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
-          <li>SVG</li>
+          <li>Javascript</li>
         </ul>
       </div>
       <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
         alt="Screenshot of the Wall of Wonder." />
     </article>
-    <article>
+    <!-- <article>
       <div class="text">
-        <!-- <h4>Latest Project</h4> -->
+        <!-- <h4>Latest Project</h4>
         <h3>Wall of Wonder</h3>
         <p class="blackbox">Description of the project. This should be fairly concise while also describing the key
           components that you developed or worked on. It can be as long as you need it to be but should at least be a
@@ -208,7 +207,7 @@
       </div>
       <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
         alt="Screenshot of the Wall of Wonder." />
-    </article>
+    </article> -->
   </section>
   <div class="gradient"></div>
   <div class="section-hightligh">
@@ -253,6 +252,7 @@
   <script src="/js/typing-effect.js"></script>
   <script src="/js/change-theme.js"></script>
   <script src="/js/timeline.js"></script>
+  <script src="/js/scroll-to-view.js"></script>
 </body>
 
 </html>

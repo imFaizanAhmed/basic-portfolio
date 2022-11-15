@@ -308,6 +308,10 @@ nav a {
   cursor: alias;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--button-color-shade2);
