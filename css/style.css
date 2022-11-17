@@ -31,6 +31,11 @@
   --highlighted-section: #98ffcf;
   /* bg image */
   --background-image: url("/img/background.jpg");
+  --background-gradient: linear-gradient(
+    63deg,
+    rgba(252, 251, 254, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 90%
+  );
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
 }
@@ -53,6 +58,11 @@
   --highlighted-section: #780025;
   /* bg image */
   --background-image: url("/img/dark\ background\ (1).png");
+  --background-gradient: linear-gradient(
+    63deg,
+    rgba(60, 60, 60, 0.1) 0%,
+    rgba(0, 0, 0, 0.4) 90%
+  );
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
 }
@@ -107,6 +117,38 @@ pre {
   justify-content: center;
 }
 
+/* .prefix {
+  display: none;
+} */
+
+/* background color div */
+.section-hightligh {
+  background-color: var(--highlighted-section);
+}
+
+.section-blue {
+  background-color: var(--dkblue);
+}
+
+.blackbox {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    var(--gradient-color) 10%,
+    var(--gradient-color-shade2) 50%,
+    var(--gradient-color) 90%
+  );
+  height: 2px;
+}
+
 /* intro styles */
 #intro {
   padding: 0rem 2rem;
@@ -116,6 +158,10 @@ pre {
   grid-column: 1/2;
   display: flex;
   align-items: center;
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
 }
 
 #into div {
@@ -135,15 +181,15 @@ pre {
 
 .name span {
   font-family: var(--sans);
-  font-size: 4rem;
+  font-size: 7.5vw;
   color: var(--text-color);
   font-weight: bold;
   display: block;
   font-weight: 300;
 }
 
-#intro h2 {
-  font-size: 3rem;
+h2 {
+  font-size: 6vw;
 }
 
 .typed-text {
@@ -166,19 +212,9 @@ pre {
   animation: none;
 }
 
-@media (max-width: 768px) {
-  #intro .svg {
-    display: none;
-  }
-  #intro p,
-  #intro h2 {
-    grid-column: 1/11;
-  }
-}
-
 /* contact section */
 #contact {
-  width: 800px;
+  max-width: 800px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 1rem;
@@ -202,6 +238,22 @@ nav {
   z-index: 100;
 }
 
+nav .tooltip {
+  position: fixed;
+  visibility: hidden;
+  top: 4rem;
+  left: 54%;
+  cursor: pointer;
+  padding: 0.5rem;
+  overflow: hidden;
+  width: 136px;
+  white-space: nowrap;
+  background-color: var(--text-color);
+  color: var(--primary);
+  opacity: 0.5;
+  border-radius: 0.5rem;
+}
+
 nav .theme-icon {
   width: calc(2rem - 4px);
   aspect-ratio: 1/1;
@@ -221,22 +273,6 @@ nav .theme-icon:hover {
   cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
-}
-
-.tooltip {
-  position: fixed;
-  visibility: hidden;
-  top: 4rem;
-  left: 170px;
-  cursor: pointer;
-  padding: 0.5rem;
-  overflow: hidden;
-  width: 136px;
-  white-space: nowrap;
-  background-color: var(--text-color);
-  color: var(--primary);
-  opacity: 0.5;
-  border-radius: 0.5rem;
 }
 
 .theme-icon:hover + .tooltip {
@@ -338,7 +374,6 @@ nav [class*="fa-"]:hover {
 }
 
 #projects h2 {
-  font-size: 2.5rem;
   margin-bottom: calc(2.5rem * 1.5);
 }
 
@@ -367,52 +402,6 @@ nav [class*="fa-"]:hover {
   padding: 1rem;
 }
 
-@media (min-width: 550px) {
-  article {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 1rem;
-  }
-
-  #projects img {
-    /*  from column 1 to 6    */
-    grid-column: 1/6;
-    grid-row: 1/2;
-    border-left: 1px solid var(--text-color-shade2);
-    border-top: 1px solid var(--text-color-shade2);
-  }
-  /*  reverse the order. Because image itself has no order associated to it so it comes first  */
-  .text {
-    order: 2;
-    text-align: right;
-    grid-column: 5/11;
-    grid-row: 1/2;
-  }
-
-  #projects ul {
-    justify-content: flex-end;
-  }
-
-  #projects .reverse img {
-    grid-column: 6/11;
-    grid-row: 1/2;
-    border-left: none;
-    border-right: 1px solid var(--text-color-shade2);
-    border-top: 1px solid var(--text-color-shade2);
-  }
-
-  #projects .reverse .text {
-    order: 2;
-    text-align: left;
-    grid-column: 1/7;
-    grid-row: 1/2;
-  }
-
-  #projects .reverse ul {
-    justify-content: flex-start;
-  }
-}
-
 footer {
   text-align: center;
   padding: 1rem 1rem;
@@ -427,6 +416,10 @@ footer ul {
   justify-content: center;
   gap: 3rem;
   font-size: 2rem;
+}
+
+footer div {
+  font-size: 3.75vw;
 }
 
 footer a {
@@ -448,7 +441,6 @@ footer a span:hover {
 }
 
 #timeline h2 {
-  font-size: 2.5rem;
   margin-bottom: calc(2.5rem);
 }
 
@@ -557,7 +549,7 @@ footer a span:hover {
   background: var(--primary);
   padding: 6px 10px;
   border-radius: 5px;
-
+  z-index: 2;
   font-weight: 600;
   text-align: left;
 }
@@ -566,6 +558,11 @@ footer a span:hover {
   text-decoration: none;
   color: var(--text-color);
   cursor: alias;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 340px;
 }
 
 .direction-l .flag {
@@ -648,6 +645,7 @@ footer a span:hover {
   display: inline-block;
   padding: 4px 6px;
   background: var(--primary);
+  padding-top: 0.5rem;
 }
 
 .desc {
@@ -668,7 +666,8 @@ footer a span:hover {
 
 /* ================ Timeline Media Queries ================ */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 825px) {
+  /* Have to add this on specific width */
   .timeline {
     width: 100%;
     padding: 4em 0 1em 0;
@@ -690,10 +689,6 @@ footer a span:hover {
     text-align: center;
   }
 
-  .flag {
-    background: rgb(255, 255, 255);
-  }
-
   .direction-l .flag:before,
   .direction-r .flag:before {
     position: absolute;
@@ -701,12 +696,7 @@ footer a span:hover {
     left: 50%;
     content: " ";
     display: block;
-    width: 12px;
-    height: 12px;
     margin-left: -9px;
-    background: #fff;
-    border-radius: 10px;
-    border: 4px solid rgb(255, 80, 80);
   }
 
   .direction-l .flag:after,
@@ -741,8 +731,9 @@ footer a span:hover {
   .desc {
     position: relative;
     margin: 1em 0 0 0;
-    padding: 1em;
-    background: rgb(245, 245, 245);
+    padding: 1rem 0.5em;
+    background: var(--primary);
+    border-radius: 5px;
     -webkit-box-shadow: 0 0 1px desc;
     -moz-box-shadow: 0 0 1px desc;
     box-shadow: 0 0 1px desc;
@@ -756,6 +747,59 @@ footer a span:hover {
   }
 }
 
+/* ============== for gradient =============== */
+@media only screen and (max-width: 1336px) and (min-width: 850px) {
+  .background-gradient {
+    background: var(--background-gradient);
+  }
+}
+
+@media (min-width: 550px) {
+  article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+
+  #projects img {
+    /*  from column 1 to 6    */
+    grid-column: 1/6;
+    grid-row: 1/2;
+    border-left: 1px solid var(--text-color-shade2);
+    border-top: 1px solid var(--text-color-shade2);
+  }
+  /*  reverse the order. Because image itself has no order associated to it so it comes first  */
+  .text {
+    order: 2;
+    text-align: right;
+    grid-column: 5/11;
+    grid-row: 1/2;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+  #projects .reverse img {
+    grid-column: 6/11;
+    grid-row: 1/2;
+    border-left: none;
+    border-right: 1px solid var(--text-color-shade2);
+    border-top: 1px solid var(--text-color-shade2);
+  }
+
+  #projects .reverse .text {
+    order: 2;
+    text-align: left;
+    grid-column: 1/7;
+    grid-row: 1/2;
+  }
+
+  #projects .reverse ul {
+    justify-content: flex-start;
+  }
+}
+
 @media screen and (min-width: 400px) {
   .direction-l .desc,
   .direction-r .desc {
@@ -763,24 +807,53 @@ footer a span:hover {
   }
 }
 
+/* ========== media query for navigation ============ */
 @media (min-width: 850px) {
   nav {
     margin: 0 auto;
   }
 
+  .prefix {
+    display: inline;
+  }
+
   #intro {
     margin-top: 70px;
     min-height: calc(100vh - 72px);
-    background-image: var(--background-image);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background-image 1s ease-in-out;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .name span {
+    font-size: 4rem;
+  }
+
+  nav .tooltip {
+    position: fixed;
+    visibility: hidden;
+    top: 4rem;
+    left: 170px;
+    cursor: pointer;
+    padding: 0.5rem;
+    overflow: hidden;
+    width: 136px;
+    white-space: nowrap;
+    background-color: var(--text-color);
+    color: var(--primary);
+    opacity: 0.5;
+    border-radius: 0.5rem;
   }
 
   nav li:first-child {
     flex-basis: auto;
     text-align: left;
     margin-right: auto;
+  }
+
+  footer div {
+    font-size: 2rem;
   }
 }
 
@@ -789,6 +862,17 @@ footer a span:hover {
     margin-top: 134px;
     min-height: calc(100vh - 136px);
   }
+  h2 {
+    font-size: 6vw;
+  }
+
+  .name span {
+    font-size: 7.5vw;
+  }
+
+  footer div {
+    font-size: 5vw;
+  }
 }
 
 @media (max-width: 344px) {
@@ -796,32 +880,15 @@ footer a span:hover {
     margin-top: 166px;
     min-height: calc(100vh - 168px);
   }
-}
+  h2 {
+    font-size: 4vw;
+  }
 
-/* background color div */
-.section-hightligh {
-  background-color: var(--highlighted-section);
-}
+  .name span {
+    font-size: 4.5vw;
+  }
 
-.section-blue {
-  background-color: var(--dkblue);
-}
-
-.blackbox {
-  background-color: var(--black);
-  padding: 1rem;
-  border-radius: 10px;
-  color: var(--white);
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.gradient {
-  background: linear-gradient(
-    90deg,
-    var(--gradient-color) 10%,
-    var(--gradient-color-shade2) 50%,
-    var(--gradient-color) 90%
-  );
-  height: 2px;
+  footer div {
+    font-size: 5vw;
+  }
 }
