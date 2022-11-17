@@ -34,7 +34,7 @@
   --background-gradient: linear-gradient(
     63deg,
     rgba(252, 251, 254, 0.1) 0%,
-    rgba(255, 255, 255, 0.5) 90%
+    rgba(255, 255, 255, 0.6) 90%
   );
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
@@ -61,7 +61,7 @@
   --background-gradient: linear-gradient(
     63deg,
     rgba(60, 60, 60, 0.1) 0%,
-    rgba(0, 0, 0, 0.4) 90%
+    rgba(0, 0, 0, 0.5) 90%
   );
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
@@ -748,10 +748,8 @@ footer a span:hover {
 }
 
 /* ============== for gradient =============== */
-@media only screen and (max-width: 1336px) and (min-width: 850px) {
-  .background-gradient {
-    background: var(--background-gradient);
-  }
+.background-gradient {
+  background: var(--background-gradient);
 }
 
 @media (min-width: 550px) {
