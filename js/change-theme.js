@@ -1,8 +1,9 @@
 const themeIconDiv = document.querySelector(".theme-icon");
-const theme = document.body;
+if (!theme) {
+  const theme = document.body;
+}
 const themeIcon = document.getElementById("theme-icon");
-
-themeIconDiv.addEventListener("click", function (event) {
+themeIconDiv.addEventListener("click", function () {
   if (theme.classList.contains("light-theme")) {
     theme.classList.remove("light-theme");
     theme.classList.add("dark-theme");

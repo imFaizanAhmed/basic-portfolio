@@ -11,6 +11,68 @@
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
+  --loader-width: min(50vw, 500px);
+  --loader-speed: 2s;
+  --loader-height: min(calc(var(--loader-width) / 10), 50px);
+}
+
+.loader {
+  --dot-width: var(--loader-height);
+  --dot-margin: calc((var(--loader-width) - (var(--loader-height) * 4)) / 8);
+  --dot-blur: calc(var(--dot-width) / 4);
+  /* min-width: var(--loader-width); */
+  width: var(--loader-width);
+  height: var(--loader-height);
+
+  padding: calc(var(--dot-blur) * 2);
+  border-radius: 9999px;
+  filter: contrast(50);
+  background: #fff;
+}
+.loader,
+.loader .dots {
+  display: flex;
+}
+.loader .dot,
+.loader .dots span {
+  display: inline-block;
+  height: var(--dot-width);
+  width: var(--dot-width);
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 var(--dot-margin);
+
+  filter: blur(var(--dot-blur));
+  border-radius: 50%;
+  transform: translateX(0);
+
+  background-color: #000;
+}
+.loader .dot {
+  animation: dot var(--loader-speed) infinite;
+}
+.loader .dots {
+  animation: dots var(--loader-speed) infinite;
+}
+
+#loader {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s ease-out;
+}
+
+#loader {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-text {
+  text-align: center;
+  margin-top: 12px;
 }
 
 .light-theme {
@@ -68,8 +130,10 @@
 }
 
 /* border box model: https://css-tricks.com/box-sizing/ */
-html {
+.main {
   box-sizing: border-box;
+  display: none;
+  transition: display 1s ease-out;
 }
 *,
 *::before,
@@ -539,8 +603,6 @@ footer a span:hover {
 .flag-wrapper {
   position: relative;
   display: inline-block;
-
-  text-align: center;
 }
 
 .flag {
@@ -631,14 +693,6 @@ footer a span:hover {
   font-size: 0.66666em;
   color: var(--text-color-shade2);
   vertical-align: middle;
-}
-
-.direction-l .time-wrapper {
-  float: left;
-}
-
-.direction-r .time-wrapper {
-  float: right;
 }
 
 .time {

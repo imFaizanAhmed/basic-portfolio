@@ -59,3 +59,17 @@
     width: 135px;
   }
 }
+
+@keyframes dot {
+  to {
+    transform: translateX(
+      calc(var(--loader-width) - var(--dot-margin) * 2 - var(--dot-width))
+    );
+  }
+}
+
+@keyframes dots {
+  to {
+    transform: translateX(calc(-1 * var(--dot-margin) * 2 - var(--dot-width)));
+  }
+}

@@ -9,243 +9,245 @@
 </head>
 
 <body class="dark-theme">
-  <nav>
-    <ul>
-      <li>
-        <div class="flex">
-          <h1>
-            <a class="flex" href="index.html">
-              <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
-              <span>
-                F
-              </span>
-              <!-- 
-            --><span>
-                a
-              </span>
-              <!-- 
-            --><span>
-                i
-              </span>
-              <span>
-                z
-              </span>
-              <span>
-                a
-              </span>
-              <span>
-                n
-              </span>
-              <span>
-                &nbsp;
-              </span>
-              <span>
-                A
-              </span>
-              <span>
-                h
-              </span>
-              <span>
-                m
-              </span>
-              <span>
-                e
-              </span>
-              <span>
-                d
-              </span>
-            </a>
-          </h1>
-
-          <div class="theme-icon">
-            <img id="theme-icon" src="img/moon-icon.svg" />
-          </div>
-          <span class="tooltip">Change Theme</span>
-        </div>
-      </li>
-      <li><a id="project-button" class="pointer"> Projects </a></li>
-      <li><a id="about-button" href="about.html"> About </a></li>
-      <li><a id="contact-button" class="pointer"> Contact </a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank" class="alias">
-          <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-          <span class="sr-only"> Linkedin </span>
-        </a>
-
-      </li>
-      <li><a href="https://github.com/imFaizanAhmed" target="_blank" class="alias">
-          <span class="fa-brands fa-github" aria-hidden="true"></span> <span class="sr-only"> Github </span> </a></li>
-      <li><a href="https://www.google.com" target="_blank" class="Call-to-action-button"> Resume </a></li>
-    </ul>
-  </nav>
-
-  <section id="intro">
+  <div id="loader">
     <div>
-      <p class="name">Welcome to my world, I'm <span>Faizan Ahmed</span></p>
-      <h2 style="display: flex; align-items: center">
-        <pre class="prefix">I'm a </pre><span class="typed-text"></span> <span class="cursor"></span>
-      </h2>
-      <p>I'm a professional Software Engineer, open to <span class="background-gradient">work as a full-stack
-          blockchain
-          developer.</span>
-      </p>
-      <p>Currently, I'm working as Full-stack developer at <a href="https://numuworld.com/" target="_blank">Numu
-          World</a>.</p>
+      <div class="loader">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="loader-text">
+        Knock Knock
+      </div>
     </div>
-  </section>
-  <div class="gradient"></div>
-
-  <section id="timeline">
-    <h2>
-      My path till now
-    </h2>
-    <ul class="timeline">
-
-      <li>
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span class="flag"><a href="https://numuworld.com/" target="_blank">Numuworld</a></span>
-            <span class="time-wrapper"><span class="time">Aug 2022 - present</span></span>
-          </div>
-          <div class="desc">My current employment. Here I am working on <span>React</span> -
-            <span>NodeJs</span> - <span>MySQL</span>.
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="direction-l">
-          <div class="flag-wrapper">
-            <span class="flag"><a href="https://www.cognitivehealthintl.com/" target="_blank">Cognitive Healthcare
-                Intl.</a></span>
-            <span class="time-wrapper"><span class="time">July 2021 - July
-                2022</span></span>
-          </div>
-          <div class="desc">My first employment. I designated as Fullstack developed. I worked on <span>Angular</span>
-            - <span>Python</span>
-            - <span>MySQL</span>.</div>
-        </div>
-      </li>
-
-      <li>
-        <div class="direction-r">
-          <div class="flag-wrapper">
-            <span class="flag"><a href="http://isb.nu.edu.pk/" target="_blank">FAST University</a> </span>
-            <span class="time-wrapper"><span class="time">Aug 2017 - July 2021</span></span>
-          </div>
-          <div class="desc">I did my BS(CS). I studied multiple courses including <span> Advance Programming</span> -
-            <span>Human Computer
-              Interaction</span> - <span>Blockchain</span>, and many more.
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-
-  <div class="gradient"></div>
-  <section id="projects">
-    <h2>
-      Projects I'm proud of
-    </h2>
-    <article>
-      <div class="text">
-        <!-- <h4>Latest Project</h4> -->
-        <h3>Find Trends</h3>
-        <p class="blackbox">A single page real-time customers feedback application. It gets tweets about the product
-          using TweepyAPI
-          and applies sentiment analysis to predict the people's views. It stores the tweets and their sentiments on
-          database for future use. View this
-          project <a href="https://github.com/imFaizanAhmed/find-trend" target="_blank" class="alias">here</a>. </p>
-        <h4>Technologies used include</h4>
-        <ul>
-          <li>Django</li>
-          <li>Bootstrap</li>
-          <li>TweepyAPI</li>
-          <li>Sqlite</li>
-        </ul>
-      </div>
-      <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-        alt="Screenshot of the Wall of Wonder." />
-    </article>
-    <article class="reverse">
-      <div class="text">
-        <!-- <h4>Latest Project</h4> -->
-        <h3>Web Portfolio</h3>
-        <p class="blackbox">A single page web application. It is created to showcase my skills, and knowledge about web
-          development basis. You can view the source code <a href="https://frontendmasters.github.io/grid-flexbox-v2/"
-            target="_blank" class="alias">here</a>.
-        <h4>Technologies used include</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-        </ul>
-      </div>
-      <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-        alt="Screenshot of the Wall of Wonder." />
-    </article>
-    <!-- <article>
-      <div class="text">
-        <!-- <h4>Latest Project</h4>
-        <h3>Wall of Wonder</h3>
-        <p class="blackbox">Description of the project. This should be fairly concise while also describing the key
-          components that you developed or worked on. It can be as long as you need it to be but should at least be a
-          few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a
-            href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look <a href="#">like
-            this</a> and <a href="#">like this</a>. </p>
-        <h4>Technologies used include</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SVG</li>
-        </ul>
-      </div>
-      <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-        alt="Screenshot of the Wall of Wonder." />
-    </article> -->
-  </section>
-  <div class="gradient"></div>
-  <div class="section-hightligh">
-    <section id="contact">
-      <h2> Contact Me </h2>
-      <p>
-        If you want to know more about me or my work, or if you would just
-        like to say hello, send me a message. I'd love to hear from you.
-      </p>
-      <p>
-        <a href="mailto:imfaizanahmed6@gmail.com" class="Call-to-action-button">Email me</a>
-      </p>
-    </section>
   </div>
-  <div class="gradient"></div>
-  <footer>
-    <div>
-      Faizan Ahmed &middot; Fullstack Developer
-    </div>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank">
-          <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-          <span class="sr-only"> Linkedin </span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/imFaizanAhmed" target="_blank">
-          <span class="fa-brands fa-github" aria-hidden="true"></span> <span class="sr-only"> Github </span> </a>
-      </li>
-      <li>
+  <div class="main">
+    <nav>
+      <ul>
+        <li>
+          <div class="flex">
+            <h1>
+              <a class="flex" href="index.html">
+                <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
+                <span>
+                  F
+                </span>
+                <!-- 
+            --><span>
+                  a
+                </span>
+                <!-- 
+            --><span>
+                  i
+                </span>
+                <span>
+                  z
+                </span>
+                <span>
+                  a
+                </span>
+                <span>
+                  n
+                </span>
+                <span>
+                  &nbsp;
+                </span>
+                <span>
+                  A
+                </span>
+                <span>
+                  h
+                </span>
+                <span>
+                  m
+                </span>
+                <span>
+                  e
+                </span>
+                <span>
+                  d
+                </span>
+              </a>
+            </h1>
 
-        <a href="mailto:imfaizanahmed6@gmail.com">
-          <span class="fa-solid fa-envelope" aria-hidden="true"></span>
-          <span class="sr-only"> Email </span>
-        </a>
-      </li>
-    </ul>
-    <p><small>&copy; 2021 Faizan Ahmed. All rights reserved.</small></p>
-  </footer>
+            <div class="theme-icon">
+              <img id="theme-icon" src="img/moon-icon.svg" />
+            </div>
+            <span class="tooltip">Change Theme</span>
+          </div>
+        </li>
+        <li><a id="project-button" class="pointer"> Projects </a></li>
+        <li><a id="about-button" href="about.html"> About </a></li>
+        <li><a id="contact-button" class="pointer"> Contact </a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank" class="alias">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only"> Linkedin </span>
+          </a>
+
+        </li>
+        <li><a href="https://github.com/imFaizanAhmed" target="_blank" class="alias">
+            <span class="fa-brands fa-github" aria-hidden="true"></span> <span class="sr-only"> Github </span> </a></li>
+        <li><a href="https://www.google.com" target="_blank" class="Call-to-action-button"> Resume </a></li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <div>
+        <p class="name">Welcome to my world, I'm <span>Faizan Ahmed</span></p>
+        <h2 style="display: flex; align-items: center">
+          <pre class="prefix">I'm a </pre><span class="typed-text"></span> <span class="cursor"></span>
+        </h2>
+        <p>I'm a professional Software Engineer, open to <span class="background-gradient">work as a full-stack
+            blockchain
+            developer.</span>
+        </p>
+        <p>Currently, I'm working as Full-stack developer at <a href="https://numuworld.com/" target="_blank">Numu
+            World</a>.</p>
+      </div>
+    </section>
+    <div class="gradient"></div>
+
+    <!-- <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" /> -->
+
+    <section id="timeline">
+      <h2>
+        My path till now
+      </h2>
+      <ul class="timeline">
+
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="https://numuworld.com/" target="_blank">Numuworld</a></span>
+              <span class="time-wrapper"><span class="time">Aug 2022 - present</span></span>
+            </div>
+            <div class="desc">My current employment. Here I am working on <span>React</span> -
+              <span>NodeJs</span> - <span>MySQL</span>.
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="https://www.cognitivehealthintl.com/" target="_blank">Cognitive Healthcare
+                  Intl.</a></span>
+              <span class="time-wrapper"><span class="time">July 2021 - July
+                  2022</span></span>
+            </div>
+            <div class="desc">My first employment. I designated as Fullstack developed. I worked on <span>Angular</span>
+              - <span>Python</span>
+              - <span>MySQL</span>.</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="http://isb.nu.edu.pk/" target="_blank">FAST University</a> </span>
+              <span class="time-wrapper"><span class="time">Aug 2017 - July 2021</span></span>
+            </div>
+            <div class="desc">I did my BS(CS). I studied multiple courses including <span> Advance Programming</span> -
+              <span>Human Computer
+                Interaction</span> - <span>Blockchain</span>, and many more.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+    <div class="gradient"></div>
+    <section id="projects">
+      <h2>
+        Projects I'm proud of
+      </h2>
+      <article>
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Find Trends</h3>
+          <p class="blackbox">A single page real-time customers feedback application. It gets tweets about the product
+            using TweepyAPI
+            and applies sentiment analysis to predict the people's views. It stores the tweets and their sentiments on
+            database for future use. View this
+            project <a href="https://github.com/imFaizanAhmed/find-trend" target="_blank" class="alias">here</a>. </p>
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>Django</li>
+            <li>Bootstrap</li>
+            <li>TweepyAPI</li>
+            <li>Sqlite</li>
+          </ul>
+        </div>
+        <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
+          alt="Screenshot of the Wall of Wonder." />
+      </article>
+      <article class="reverse">
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Web Portfolio</h3>
+          <p class="blackbox">A single page web application. It is created to showcase my skills, and knowledge about
+            web
+            development basis. You can view the source code <a href="https://frontendmasters.github.io/grid-flexbox-v2/"
+              target="_blank" class="alias">here</a>.
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
+          alt="Screenshot of the Wall of Wonder." />
+      </article>
+    </section>
+    <div class="gradient"></div>
+    <div class="section-hightligh">
+      <section id="contact">
+        <h2> Contact Me </h2>
+        <p>
+          If you want to know more about me or my work, or if you would just
+          like to say hello, send me a message. I'd love to hear from you.
+        </p>
+        <p>
+          <a href="mailto:imfaizanahmed6@gmail.com" class="Call-to-action-button">Email me</a>
+        </p>
+      </section>
+    </div>
+    <div class="gradient"></div>
+    <footer>
+      <div>
+        Faizan Ahmed &middot; Fullstack Developer
+      </div>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only"> Linkedin </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/imFaizanAhmed" target="_blank">
+            <span class="fa-brands fa-github" aria-hidden="true"></span> <span class="sr-only"> Github </span> </a>
+        </li>
+        <li>
+
+          <a href="mailto:imfaizanahmed6@gmail.com">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="sr-only"> Email </span>
+          </a>
+        </li>
+      </ul>
+      <p><small>&copy; 2021 Faizan Ahmed. All rights reserved.</small></p>
+    </footer>
+  </div>
 
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/loader.js"></script>
   <link href="css/animation.css" rel="stylesheet">
   <script src="js/typing-effect.js"></script>
   <script src="js/scroll-to-view.js"></script>
