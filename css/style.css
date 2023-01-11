@@ -446,7 +446,7 @@ footer a span:hover {
 
 .timeline {
   position: relative;
-  width: 776px;
+  width: 800px;
   margin: 0 auto;
   /* margin-top: 20px; */
   padding: 1em 0;
@@ -521,9 +521,15 @@ footer a span:hover {
 
 .direction-l {
   position: relative;
-  width: 358px;
+  width: 370px;
   float: left;
   text-align: right;
+}
+
+.flag-flex {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .move-from-right {
@@ -532,7 +538,7 @@ footer a span:hover {
 
 .direction-r {
   position: relative;
-  width: 357px;
+  width: 369px;
   float: right;
 }
 
@@ -718,6 +724,10 @@ footer a span:hover {
     display: block;
     position: relative;
     margin: 4px 0 0 0;
+  }
+
+  .flag-flex {
+    display: unset !important;
   }
 
   .direction-l .time-wrapper {
