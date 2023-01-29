@@ -900,3 +900,18 @@ footer a span:hover {
     font-size: 5vw;
   }
 }
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 10px;
+  font-size: 2.5vw;
+  color: var(--text-color);
+  z-index: 11;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+  -webkit-animation: glow 4s infinite;
+  animation: glow 4s infinite;
+}
