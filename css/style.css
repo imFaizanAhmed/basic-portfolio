@@ -84,6 +84,7 @@ body {
   background-color: var(--primary);
   color: var(--text-color);
   font-size: var(--font-size);
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -153,7 +154,7 @@ pre {
 #intro {
   padding: 0rem 2rem;
   margin-top: 102px;
-  min-height: calc(100vh - 104px);
+  min-height: calc(100vh - 103px);
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
@@ -827,7 +828,7 @@ footer a span:hover {
 
   #intro {
     margin-top: 70px;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 71px);
   }
 
   h2 {
@@ -868,7 +869,7 @@ footer a span:hover {
 @media (max-width: 562px) {
   #intro {
     margin-top: 134px;
-    min-height: calc(100vh - 136px);
+    min-height: calc(100vh - 135px);
   }
   h2 {
     font-size: 6vw;
@@ -886,7 +887,7 @@ footer a span:hover {
 @media (max-width: 344px) {
   #intro {
     margin-top: 166px;
-    min-height: calc(100vh - 168px);
+    min-height: calc(100vh - 167px);
   }
   h2 {
     font-size: 4vw;
@@ -901,12 +902,13 @@ footer a span:hover {
   }
 }
 
+/* scroll */
 .scroll {
   position: absolute;
-  bottom: 20px;
+  bottom: 12px;
   left: 50%;
   width: 10px;
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
   color: var(--text-color);
   z-index: 11;
   opacity: 1;
@@ -914,4 +916,24 @@ footer a span:hover {
   cursor: pointer;
   -webkit-animation: glow 4s infinite;
   animation: glow 4s infinite;
+}
+
+.fa-angle-double-down:before {
+  position: absolute;
+  left: -7px;
+  bottom: 4px;
+}
+
+.st1 {
+  fill: var(--primary-shade2);
+}
+
+.scroll-background {
+  display: block;
+  position: absolute;
+  bottom: -13px;
+  width: 220px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
