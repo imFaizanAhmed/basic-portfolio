@@ -154,7 +154,7 @@ pre {
 #intro {
   padding: 0rem 2rem;
   margin-top: 102px;
-  min-height: calc(100vh - 103px);
+  min-height: calc(100vh - 105px);
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
@@ -828,7 +828,7 @@ footer a span:hover {
 
   #intro {
     margin-top: 70px;
-    min-height: calc(100vh - 71px);
+    min-height: calc(100vh - 73px);
   }
 
   h2 {
@@ -869,7 +869,7 @@ footer a span:hover {
 @media (max-width: 562px) {
   #intro {
     margin-top: 134px;
-    min-height: calc(100vh - 135px);
+    min-height: calc(100vh - 137px);
   }
   h2 {
     font-size: 6vw;
@@ -887,7 +887,7 @@ footer a span:hover {
 @media (max-width: 344px) {
   #intro {
     margin-top: 166px;
-    min-height: calc(100vh - 167px);
+    min-height: calc(100vh - 169px);
   }
   h2 {
     font-size: 4vw;
@@ -931,9 +931,14 @@ footer a span:hover {
 .scroll-background {
   display: block;
   position: absolute;
-  bottom: -13px;
+  bottom: -14px;
   width: 220px;
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.scroll-background path {
+  stroke: var(--gradient-color-shade2);
+  fill: var(--primary-shade2);
 }
