@@ -154,7 +154,7 @@ pre {
 #intro {
   padding: 0rem 2rem;
   margin-top: 102px;
-  min-height: calc(100dvh - 105px);
+  min-height: calc(100svh - 105px);
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
@@ -234,7 +234,7 @@ nav {
   top: 0px;
   background-color: var(--primary);
   opacity: 0.95;
-  width: 100dvw;
+  width: 100svw;
   box-shadow: 0 0px 15px 0 var(--shadow);
   z-index: 100;
 }
@@ -828,7 +828,7 @@ footer a span:hover {
 
   #intro {
     margin-top: 70px;
-    min-height: calc(100dvh - 73px);
+    min-height: calc(100svh - 73px);
   }
 
   h2 {
@@ -869,7 +869,7 @@ footer a span:hover {
 @media (max-width: 562px) {
   #intro {
     margin-top: 134px;
-    min-height: calc(100dvh - 137px);
+    min-height: calc(100svh - 137px);
   }
   h2 {
     font-size: 6vw;
@@ -887,7 +887,7 @@ footer a span:hover {
 @media (max-width: 344px) {
   #intro {
     margin-top: 166px;
-    min-height: calc(100dvh - 169px);
+    min-height: calc(100svh - 169px);
   }
   h2 {
     font-size: 4vw;
