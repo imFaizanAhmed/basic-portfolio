@@ -21,7 +21,8 @@
   --text-color: #222;
   --text-color-shade2: #198754;
   /* for buttons */
-  --button-color: #198754;
+  /* --button-color: #198754; */
+  --button-color: #49754b;
   --button-color-shade2: #44ca8c;
   /* gradient color */
   --gradient-color: #c8c8c8;
@@ -941,4 +942,9 @@ footer a span:hover {
 .scroll-background path {
   stroke: var(--gradient-color-shade2);
   fill: var(--primary-shade2);
+}
+
+.curve {
+  fill: var(--primary);
+  stroke: var(--primary);
 }
