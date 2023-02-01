@@ -126,6 +126,9 @@ pre {
 /* background color div */
 .section-hightligh {
   background-color: var(--highlighted-section);
+  /* To display curve SVG */
+  position: relative;
+  z-index: -1;
 }
 
 .section-blue {
@@ -946,5 +949,13 @@ footer a span:hover {
 
 .curve {
   fill: var(--primary);
-  stroke: var(--primary);
+  stroke-width: 1px;
+}
+
+.svgcolor-light {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  width: 120%;
+  left: -10%;
 }

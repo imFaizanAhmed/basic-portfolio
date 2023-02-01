@@ -218,34 +218,21 @@
       <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
         alt="Screenshot of the Wall of Wonder." />
     </article>
-    <!-- <article>
-      <div class="text">
-        <!-- <h4>Latest Project</h4>
-        <h3>Wall of Wonder</h3>
-        <p class="blackbox">Description of the project. This should be fairly concise while also describing the key
-          components that you developed or worked on. It can be as long as you need it to be but should at least be a
-          few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a
-            href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look <a href="#">like
-            this</a> and <a href="#">like this</a>. </p>
-        <h4>Technologies used include</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SVG</li>
-        </ul>
-      </div>
-      <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
-        alt="Screenshot of the Wall of Wonder." />
-    </article> -->
   </section>
   <!-- <div class="gradient"></div> -->
 
 
   <div class="section-hightligh">
-    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-      xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-      <path d="M0 0 L50 100 L100 0 Z" class="curve"></path>
+
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      class="svgcolor-light">
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="var(--gradient-color)" />
+        <stop offset="100%" stop-color="var(--gradient-color-shade2)" />
+      </linearGradient>
+      <path d="M0 0 L50 100 L100 0 Z" class="curve" stroke="url(#gradient)"></path>
     </svg>
+
     <section id="contact">
       <h2> Contact Me </h2>
       <p>
@@ -257,7 +244,9 @@
         <a href="mailto:imfaizanahmed6@gmail.com" class="Call-to-action-button">Email me</a>
       </p>
     </section>
+
   </div>
+
   <div class="gradient"></div>
 
   <footer>
