@@ -1,0 +1,168 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --green: #646f60;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+.light-theme {
+  /* for section backgrounds */
+  --primary: #fcfbfe;
+  --primary-shade2: rgb(245 245 245);
+  /* for text backgrounds */
+  --text-color: #222;
+  --text-color-shade2: #198754;
+  /* for buttons */
+  /* --button-color: #198754; */
+  --button-color: #49754b;
+  --button-color-shade2: #44ca8c;
+  /* gradient color */
+  --gradient-color: #c8c8c8;
+  --gradient-color-shade2: #706f6f;
+  /* shadow */
+  --shadow: rgba(0, 0, 0, 0.15);
+  --highlighted-section: #98ffcf;
+  /* bg image */
+  --background-image: url("/img/background.jpg");
+  --background-gradient: linear-gradient(
+    63deg,
+    rgba(252, 251, 254, 0.1) 0%,
+    rgba(255, 255, 255, 0.6) 90%
+  );
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.dark-theme {
+  /* for section backgrounds */
+  --primary: rgb(42 42 42);
+  --primary-shade2: #222;
+  /* for text backgrounds */
+  --text-color: #fcfbfe;
+  --text-color-shade2: #f9004d;
+  /* for buttons */
+  --button-color: #f9004d;
+  --button-color-shade2: #b40d41;
+  /* gradient color */
+  --gradient-color: #c8c8c8;
+  --gradient-color-shade2: #706f6f;
+  /* shadow */
+  --shadow: rgba(225, 225, 225, 0.15);
+  --highlighted-section: #780025;
+  /* bg image */
+  --background-image: url("/img/dark\ background\ (1).png");
+  --background-gradient: linear-gradient(
+    63deg,
+    rgba(60, 60, 60, 0.1) 0%,
+    rgba(0, 0, 0, 0.5) 90%
+  );
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* generic styles for the page */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--primary);
+  color: var(--text-color);
+  font-size: var(--font-size);
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+a {
+  color: var(--button-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a span {
+  font-size: 1;
+}
+
+img {
+  width: 100%;
+}
+
+pre {
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* intro styles */
+#intro {
+  padding: 0rem 2rem;
+  margin-top: 102px;
+  min-height: calc(100svh - 105px);
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+}
+
+#into div {
+  min-width: 620px;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+  font-size: 1rem;
+  margin: 0px;
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 7.5vw;
+  color: var(--text-color);
+  font-weight: bold;
+  display: block;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 6vw;
+}
+
+.typed-text {
+  font-weight: normal;
+  color: var(--text-color-shade2);
+}

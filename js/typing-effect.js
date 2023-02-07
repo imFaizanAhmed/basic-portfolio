@@ -5,7 +5,6 @@ const textArray = [
   "Full-stack developer",
   "Frontend developer",
   "Backend developer",
-  "Blockchain developer",
 ];
 const typingDelay = 200;
 const erasingDelay = 100;

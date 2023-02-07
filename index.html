@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faizan's Portfolio</title>
   <link rel="icon" href="img/logo.svg">
+  <link href="css/hero-page.css" rel="stylesheet">
 </head>
 
 <body class="dark-theme">
@@ -82,13 +83,15 @@
   </nav>
 
   <section id="intro">
-    <div>
+    <div style="max-width: 600px">
       <p class="name">Welcome to my world, I'm <span>Faizan Ahmed</span></p>
       <h2 style="display: flex; align-items: center">
         <pre class="prefix">I'm a </pre><span class="typed-text"></span> <span class="cursor"></span>
       </h2>
-      <p style="width: 87%">I'm a professional Software Engineer, open to work as a full-stack
-        developer.
+      <p style="width: 87%">I'm a professional Software Engineer with around <span class="">one and half years</span> of
+        industrial
+        experiance. I am
+        open to work as a full-stack developer.
       </p>
       <p>Currently, I'm working as Full-stack developer at <a href="https://numuworld.com/" target="_blank">Numu
           World</a>.</p>
@@ -141,8 +144,10 @@
             <span class="flag"><a href="https://numuworld.com/" target="_blank">Numuworld</a></span>
             <span class="time-wrapper"><span class="time">Aug 2022 - present</span></span>
           </div>
-          <div class="desc">My current employment. Here I am working on <span>React</span> -
-            <span>NodeJs</span> - <span>MySQL</span>.
+          <div id="numu" class="desc overflow-card">My current employment. Here I am working on <span>React</span> -
+            <span>NodeJs</span> - <span>MySQL</span>. <a>Learn more</a><span id="numu-loadmore"></span><span
+              id="uni-cursor"></span>
+            <!-- class="small-cursor" -->
           </div>
         </div>
       </li>
@@ -155,9 +160,12 @@
             <span class="time-wrapper"><span class="time">July 2021 - July
                 2022</span></span>
           </div>
-          <div class="desc">My first employment. I designated as Fullstack developed. I worked on <span>Angular</span>
+          <div id="chi" class="desc overflow-card">My first employment. I designated as Fullstack developed. I worked on
+            <span>Angular</span>
             - <span>Python</span>
-            - <span>MySQL</span>.</div>
+            - <span>MySQL</span>. <a>Learn more</a><span id="chi-loadmore"></span><span id="chi-cursor"></span>
+            <!-- class="small-cursor" -->
+          </div>
         </div>
       </li>
 
@@ -167,9 +175,12 @@
             <span class="flag"><a href="http://isb.nu.edu.pk/" target="_blank">FAST University</a> </span>
             <span class="time-wrapper"><span class="time">Aug 2017 - July 2021</span></span>
           </div>
-          <div class="desc">I did my BS(CS). I studied multiple courses including <span> Advance Programming</span> -
+          <div id="university" class="desc overflow-card">I did my BS(CS). I studied multiple courses including <span>
+              Advance
+              Programming</span> -
             <span>Human Computer
-              Interaction</span> - <span>Blockchain</span>, and many more.
+              Interaction</span> - <span>Blockchain</span>, and many more. <span id="uni-loadmore"></span> <span
+              id="uni-cursor" class="small-cursor"></span>
           </div>
         </div>
       </li>
@@ -236,15 +247,22 @@
     </svg>
 
     <section id="contact">
-      <h2> Contact Me </h2>
-      <p>
-        I'm currently open to new employment opportunities. If you want to know more about me or my work, or if you
-        would just
-        like to say hello, send me a message. I'd love to hear from you.
-      </p>
-      <p>
-        <a href="mailto:imfaizanahmed6@gmail.com" class="Call-to-action-button">Email me</a>
-      </p>
+      <h2> Get in touch </h2>
+      <div class="contact">
+        <p>
+          An attitude of gratitude opens the doors to endless possibilities. Thank you for visiting my Portfolio. Let's
+          connect
+        </p>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <div style="margin-top: 2rem">
+            <!-- href="mailto:imfaizanahmed6@gmail.com" -->
+            <input type="submit" class="Call-to-action-button" style="font-size: 80%;" value="Email me" />
+          </div>
+        </form>
+      </div>
     </section>
 
   </div>
@@ -283,6 +301,9 @@
   <script src="js/scroll-to-view.js"></script>
   <script src="js/change-theme.js"></script>
   <script src="js/timeline.js"></script>
+  <script src="js/uni-journey.js"></script>
+  <!-- <script src="js/numu-journey.js"></script>
+  <script src="js/chi-journey.js"></script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
