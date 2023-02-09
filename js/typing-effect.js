@@ -3,8 +3,8 @@ const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
   "Full-stack developer",
-  "Frontend developer",
   "Backend developer",
+  "Frontend developer",
 ];
 const typingDelay = 200;
 const erasingDelay = 100;
