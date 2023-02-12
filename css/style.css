@@ -76,7 +76,7 @@
 
   background: transparent;
   color: var(--text-color);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   box-shadow: none;
   outline: none;
 }
@@ -240,9 +240,22 @@ nav [class*="fa-"]:hover {
   background-color: var(--button-color-shade2);
 }
 
+#skills,
 #projects {
   padding: 4rem 2rem;
   background-color: var(--primary);
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill {
+  border: 1px solid var(--white);
+  width: 12rem;
+  margin-top: 12px;
 }
 
 #uni-loadmore {
@@ -549,7 +562,7 @@ footer a span:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  max-width: 400px;
+  /* max-width: 400px; */
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   animation: height-shrink 5s;
@@ -652,6 +665,10 @@ footer a span:hover {
     position: relative;
     margin: 1em 1em 0 1em;
     padding: 1em;
+  }
+
+  .overflow-card {
+    height: 112px;
   }
 }
 
