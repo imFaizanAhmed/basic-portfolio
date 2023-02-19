@@ -51,6 +51,7 @@
   height: 1.5rem;
   animation: blink 1s infinite;
   -moz-animation: blink 1s infinite;
+  visibility: hidden;
 }
 
 .cursor.typing {
@@ -191,11 +192,11 @@ nav li > a:not(.Call-to-action-button) {
   display: flex;
   align-items: center;
 }
-/* 
+
 nav li:first-child {
-  flex-basis: 100%;
+  margin-right: auto;
   text-align: center;
-} */
+}
 nav [class*="fa-"] {
   font-size: 150%;
   color: var(--text-color);
@@ -613,7 +614,7 @@ footer a span:hover {
 }
 
 .overflow-card {
-  height: 104px;
+  height: fit-content;
   /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
@@ -722,10 +723,6 @@ footer a span:hover {
     margin: 1em 1em 0 1em;
     padding: 1em;
   }
-
-  .overflow-card {
-    height: 112px;
-  }
 }
 
 /* ============== for gradient =============== */
@@ -788,10 +785,6 @@ footer a span:hover {
 
 /* ========== media query for navigation ============ */
 @media (min-width: 850px) {
-  nav {
-    margin: 0 auto;
-  }
-
   .prefix {
     display: inline;
   }
@@ -841,12 +834,33 @@ footer a span:hover {
     margin-top: 134px;
     min-height: calc(100svh - 137px);
   }
+
   h2 {
     font-size: 6vw;
   }
 
+  .cursor {
+    height: 7vw;
+  }
+
+  p,
+  pre,
+  div,
+  span {
+    font-size: 3.5vw;
+  }
+
   .name span {
     font-size: 7.5vw;
+  }
+
+  nav li:first-child {
+    font-size: 1rem;
+  }
+
+  #menuToggle span {
+    width: 22px !important;
+    height: 3px !important;
   }
 
   footer div {
@@ -865,6 +879,15 @@ footer a span:hover {
 
   .name span {
     font-size: 4.5vw;
+  }
+
+  nav li:first-child {
+    font-size: 0.7rem;
+  }
+
+  #menuToggle span {
+    width: 16px !important;
+    height: 2px !important;
   }
 
   footer div {
@@ -949,10 +972,6 @@ footer a span:hover {
   color: #232323;
 
   transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-  color: tomato;
 }
 
 #menuToggle input {
