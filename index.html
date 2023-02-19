@@ -8,6 +8,7 @@
   <title>Faizan's Portfolio</title>
   <link rel="icon" href="img/logo.svg">
   <link href="css/hero-page.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="dark-theme">
@@ -21,12 +22,10 @@
               <span>
                 F
               </span>
-              <!-- 
-            --><span>
+              <span>
                 a
               </span>
-              <!-- 
-            --><span>
+              <span>
                 i
               </span>
               <span>
@@ -65,20 +64,46 @@
           <span class="tooltip">Change Theme</span>
         </div>
       </li>
-      <li><a id="about-button" class="pointer"> About </a></li>
-      <li><a id="journey-button" class="pointer"> Journey </a></li>
-      <li><a id="project-button" class="pointer"> Projects </a></li>
-      <li><a id="contact-button" class="pointer"> Contact </a></li>
-      <li>
+
+      <span id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Info</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+          <a href="https://erikterwan.com/" target="_blank">
+            <li>Show me more</li>
+          </a>
+        </ul>
+      </span>
+
+      <li role="web-menu-item"><a id="about-button" class="pointer"> About </a></li>
+      <li role="web-menu-item"><a id="journey-button" class="pointer"> Journey </a></li>
+      <li role="web-menu-item"><a id="project-button" class="pointer"> Projects </a></li>
+      <li role="web-menu-item"><a id="contact-button" class="pointer"> Contact </a></li>
+      <li role="web-menu-item">
         <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank" class="alias">
           <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
           <span class="sr-only"> Linkedin </span>
         </a>
 
       </li>
-      <li><a href="https://github.com/imFaizanAhmed" target="_blank" class="alias">
+      <li role="web-menu-item"><a href="https://github.com/imFaizanAhmed" target="_blank" class="alias">
           <span class="fa-brands fa-github" aria-hidden="true"></span> <span class="sr-only"> Github </span> </a></li>
-      <li><a href="https://www.google.com" target="_blank" class="Call-to-action-button"> Resume </a></li>
+      <li role="web-menu-item"><a href="https://www.google.com" target="_blank" class="Call-to-action-button"> Resume
+        </a></li>
     </ul>
   </nav>
 
@@ -88,7 +113,7 @@
       <h2 style="display: flex; align-items: center">
         <pre class="prefix">I'm a </pre><span class="typed-text"></span> <span class="cursor"></span>
       </h2>
-      <p style="width: 87%">with around <span class="highlight">one and half years</span> of
+      <p style="width: 87%">with more than <span class="highlight">one and half years</span> of
         industrial
         experiance. I am
         open to work as a full-stack developer.
@@ -147,7 +172,7 @@
     <ul class="timeline">
 
       <li>
-        <div class="direction-r">
+        <div data-aos="dir-r" class="direction-r">
           <div class="flag-wrapper">
             <span class="flag"><a href="https://numuworld.com/" target="_blank">Numuworld</a></span>
             <span class="time-wrapper"><span class="time">Aug 2022 - present</span></span>
@@ -161,7 +186,7 @@
       </li>
 
       <li>
-        <div class="direction-l">
+        <div data-aos="dir-l" class="direction-l">
           <div class="flag-wrapper flag-flex">
             <span class="flag"><a href="https://www.cognitivehealthintl.com/" target="_blank">Cognitive Healthcare
                 Intl.</a></span>
@@ -178,7 +203,7 @@
       </li>
 
       <li>
-        <div class="direction-r">
+        <div data-aos="dir-r" class="direction-r">
           <div class="flag-wrapper">
             <span class="flag"><a href="http://isb.nu.edu.pk/" target="_blank">FAST University</a> </span>
             <span class="time-wrapper"><span class="time">Aug 2017 - July 2021</span></span>
@@ -195,32 +220,182 @@
     </ul>
   </section>
 
-  <!-- <div class="gradient"></div>
+  <div class="gradient"></div>
   <section id="skills">
     <h2>
       Skills I learnt and used
     </h2>
-    <div class="skills">
-      <div class="skill">
-        Cpp
+    <div class="sidebar">
+      <ul class="menu">
+        <li id="backend" class="categories">
+          <div><span>Backend</span></div>
+        </li>
+        <li id="frontend" class="categories">
+          <div><span>Frontend</span></div>
+        </li>
+        <li id="tools" class="categories">
+          <div><span>Tools</span></div>
+        </li>
+        <li id="apis" class="categories">
+          <div><span>Third-party APIs</span></div>
+        </li>
+      </ul>
+
+      <div id="backend-skills" class="skills-invisible">
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            NodeJs
+          </span>
+        </div>
       </div>
-      <div class="skill">
-        Python
+      <div id="frontend-skills" class="skills-invisible">
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            ReactJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            ReactJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            ReactJs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            ReactJs
+          </span>
+        </div>
       </div>
-      <div class="skill">
-        Javascript
+      <div id="tools-skills" class="skills-invisible">
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            Redis
+          </span>
+        </div>
       </div>
-      <div class="skill">
-        Cpp
-      </div>
-      <div class="skill">
-        Python
-      </div>
-      <div class="skill">
-        Javascript
+      <div id="apis-skills" class="skills-invisible">
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            Google APIs
+          </span>
+        </div>
+        <div data-aos="skill" class="skill">
+          <img class="skill-logo" src="img/nodejs.svg" alt="nodeJs logo" />
+          <span>
+            Google APIs
+          </span>
+        </div>
       </div>
     </div>
-  </section> -->
+
+  </section>
 
   <div class="gradient"></div>
   <section id="projects">
@@ -336,12 +511,24 @@
   <script src="js/change-theme.js"></script>
   <script src="js/timeline.js"></script>
   <script src="js/uni-journey.js"></script>
+  <script src="js/inpage-nav.js"></script>
   <!-- <script src="js/numu-journey.js"></script>
   <script src="js/chi-journey.js"></script> -->
+  <script src="js/change-skills.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 400,
+      // mirror: true,
+      delay: 100,
+      offset: 10
+    });
+  </script>
 </body>
 
 </html>

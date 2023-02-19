@@ -73,3 +73,45 @@
     transform: translateY(10px);
   }
 }
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+[data-aos="dir-r"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: rotate(-45deg);
+}
+
+[data-aos="dir-r"].aos-animate {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+[data-aos="dir-l"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: rotate(45deg);
+}
+
+[data-aos="dir-l"].aos-animate {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+[data-aos="skill"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transform: translateY(50px);
+}
+
+[data-aos="skill"].aos-animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
