@@ -232,7 +232,7 @@ nav [class*="fa-"]:hover {
   font-family: var(--mono);
   text-decoration: none;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 600;
   border: unset;
 }
 
@@ -305,8 +305,8 @@ nav [class*="fa-"]:hover {
   flex-wrap: wrap;
   padding: 1rem;
   box-shadow: 0 0 4px 0 var(--shadow);
-  height: 90px;
-  min-width: 106px;
+  height: fit-content;
+  max-height: 90px;
   cursor: context-menu;
 }
 
@@ -723,6 +723,10 @@ footer a span:hover {
     margin: 1em 1em 0 1em;
     padding: 1em;
   }
+
+  #skills .skill {
+    padding: 0.75rem;
+  }
 }
 
 /* ============== for gradient =============== */
@@ -951,7 +955,11 @@ footer a span:hover {
 
 #menuToggle {
   display: block;
-  position: relative;
+  position: fixed;
+  top: 1.4rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 110;
 
   -webkit-user-select: none;
   user-select: none;
@@ -1019,7 +1027,7 @@ footer a span:hover {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  /* background: #232323; */
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -1031,24 +1039,6 @@ footer a span:hover {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
 #menu li {
   padding: 10px 0;
   font-size: 22px;
@@ -1056,4 +1046,49 @@ footer a span:hover {
 
 #menuToggle input:checked ~ ul {
   transform: translate(-100%, 0);
+}
+
+.mobile-menu {
+  height: 100vh;
+  width: 100vw;
+  font-size: 5vw;
+  list-style-type: circle;
+  gap: 2rem;
+}
+
+.mobile-menu.none {
+  display: none;
+}
+
+.mobile-menu.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3rem;
+}
+
+/* Scroll bar */
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: rgb(68, 68, 68);
+  border-radius: 10px;
 }
