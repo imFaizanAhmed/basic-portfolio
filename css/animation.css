@@ -83,6 +83,24 @@
   }
 }
 
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
 [data-aos="dir-r"] {
   opacity: 0;
   transition-property: transform, opacity;

@@ -1058,6 +1058,8 @@ footer a span:hover {
 
 .mobile-menu.none {
   display: none;
+  animation: slide-to-right 1s;
+  -moz-animation: slide-to-right 1s;
 }
 
 .mobile-menu.flex {
@@ -1066,14 +1068,16 @@ footer a span:hover {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 3rem;
+  animation: slide-from-right 1s;
+  -moz-animation: slide-from-right 1s;
 }
 
 /* Scroll bar */
 html::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 
-html::-webkit-scrollbar-track {
+/* html::-webkit-scrollbar-track {
   background: rgb(179, 177, 177);
   border-radius: 10px;
 }
@@ -1090,5 +1094,5 @@ html::-webkit-scrollbar-thumb:hover {
 
 html::-webkit-scrollbar-thumb:active {
   background: rgb(68, 68, 68);
-  border-radius: 10px;
-}
+  border-radius: 10px; 
+} */
