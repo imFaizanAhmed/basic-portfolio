@@ -36,59 +36,59 @@
   -webkit-transition: all 1s ease-in-out;
 }
 
-/* .dark-theme { */
-/* for section backgrounds */
-/* --primary: rgb(42 42 42); */
-/* --primary-shade2: #222; */
-/* for text backgrounds */
-/* --text-color: #fcfbfe; */
-/* --text-color-shade2: #f9004d; */
-/* for buttons */
-/* --button-color: #f9004d; */
-/* --button-color-shade2: #b40d41; */
-/* gradient color */
-/* --gradient-color: #c8c8c8; */
-/* --gradient-color-shade2: #706f6f; */
-/* shadow */
-/* --shadow: rgba(225, 225, 225, 0.15); */
-/* --highlighted-section: #780025; */
-/* bg image */
-/* --background-image: url("/img/dark\ background\ (1).png"); */
-/* --background-gradient: linear-gradient( */
-/* 63deg, */
-/* rgba(60, /60, 60, 0.1) 0%, */
-/* rgba(0, 0, 0, 0.5) 90% */
-/* ); */
-/* transition: all 1s ease-out; */
-/* -webkit-transition: all 1s ease-in-out; */
-/* } */
-
 .dark-theme {
   /* for section backgrounds */
-  --primary: #2b6777;
-  --primary-shade2: #254f5a;
+  --primary: rgb(42 42 42);
+  --primary-shade2: #222;
   /* for text backgrounds */
   --text-color: #fcfbfe;
-  --text-color-shade2: #52ab98;
+  --text-color-shade2: #f9004d;
   /* for buttons */
-  --button-color: #7affe3;
-  --button-color-shade2: #f2f2f2;
+  --button-color: #f9004d;
+  --button-color-shade2: #fcfbfe;
   /* gradient color */
   --gradient-color: #c8c8c8;
   --gradient-color-shade2: #706f6f;
   /* shadow */
   --shadow: rgba(225, 225, 225, 0.15);
-  --highlighted-section: #00c99e;
+  --highlighted-section: #780025;
   /* bg image */
   --background-image: url("/img/dark\ background\ (1).png");
   --background-gradient: linear-gradient(
     63deg,
-    rgba(60, 60, 60, 0.1) 0%,
+    rgba(60, /60, 60, 0.1) 0%,
     rgba(0, 0, 0, 0.5) 90%
   );
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
 }
+
+/* .dark-theme { */
+/* for section backgrounds */
+/* --primary: #2b6777; */
+/* --primary-shade2: #254f5a; */
+/* for text backgrounds */
+/* --text-color: #fcfbfe; */
+/* --text-color-shade2: #52ab98; */
+/* for buttons */
+/* --button-color: #7affe3; */
+/* --button-color-shade2: #f2f2f2; */
+/* gradient color */
+/* --gradient-color: #c8c8c8; */
+/* --gradient-color-shade2: #706f6f; */
+/* shadow */
+/* --shadow: rgba(225, 225, 225, 0.15); */
+/* --highlighted-section: #00c99e; */
+/* bg image */
+/* --background-image: url("/img/dark\ background\ (1).png"); */
+/* --background-gradient: linear-gradient( */
+/* 63deg, */
+/* rgba(60, 60, 60, 0.1) 0%, */
+/* rgba(0, 0, 0, 0.5) 90% */
+/* ); */
+/* transition: all 1s ease-out; */
+/* -webkit-transition: all 1s ease-in-out; */
+/* } */
 
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
@@ -207,7 +207,8 @@ pre {
   grid-column: 3/4;
   grid-row: 1/2;
   /* border-radius: 39% 61% 68% 35%/38% 29% 74%; */
-  border-radius: 46% 62% 62% 39%/55% 28% 76%;
+  /* border-radius: 46% 62% 62% 39%/55% 28% 76%; */
+  border-radius: 4% 30%;
   overflow: hidden;
   background-color: var(--button-color-shade2);
   height: 330px;
