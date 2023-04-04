@@ -853,10 +853,14 @@ footer a span:hover {
   }
 
   p,
-  pre,
   div,
   span {
     font-size: 16px;
+  }
+
+  pre,
+  pre + span {
+    font-size: 1.3rem;
   }
 
   .name span {
@@ -865,11 +869,6 @@ footer a span:hover {
 
   nav li:first-child {
     font-size: 1rem;
-  }
-
-  #menuToggle span {
-    width: 22px !important;
-    height: 3px !important;
   }
 
   footer div {
