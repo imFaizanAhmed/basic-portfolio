@@ -840,8 +840,8 @@ footer a span:hover {
 
 @media (max-width: 562px) {
   #intro {
-    margin-top: 134px;
-    min-height: calc(100svh - 137px);
+    margin-top: 61px;
+    min-height: calc(100svh - 64px);
   }
 
   h2 {
@@ -878,8 +878,8 @@ footer a span:hover {
 
 @media (max-width: 344px) {
   #intro {
-    margin-top: 166px;
-    min-height: calc(100svh - 169px);
+    margin-top: 115px;
+    min-height: calc(100svh - 119px);
   }
 
   .name span {

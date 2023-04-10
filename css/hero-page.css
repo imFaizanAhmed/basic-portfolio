@@ -146,8 +146,8 @@ pre {
 /* intro styles */
 #intro {
   padding: 0rem 2rem;
-  margin-top: 102px;
-  min-height: calc(100svh - 105px);
+  margin-top: 75px;
+  min-height: calc(100svh - 79px);
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
@@ -157,6 +157,12 @@ pre {
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 1s ease-in-out;
+}
+
+@media screen and (min-width: 652px) {
+  #intro .my-image-mobile {
+    width: 160px;
+  }
 }
 
 #into div {
