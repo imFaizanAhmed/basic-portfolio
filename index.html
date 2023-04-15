@@ -466,17 +466,17 @@
             connect
           </p>
           <div>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
+            <input type="text" placeholder="Name" id="sender-name" />
+            <input type="email" placeholder="Email" id="sender-email" />
+            <textarea placeholder="Message" id="send-body"></textarea>
             <div style="margin-top: 2rem">
               <!-- href="mailto:imfaizanahmed6@gmail.com" -->
-              <input type="submit" class="Call-to-action-button" style="font-size: 80%;" value="Email me" />
+              <input type="submit" onclick="sendMail()" class="Call-to-action-button" style="font-size: 80%;"
+                value="Email me" />
             </div>
           </div>
         </div>
       </section>
-
     </div>
 
     <div class="gradient"></div>
@@ -516,6 +516,7 @@
   <script src="js/timeline.js"></script>
   <script src="js/uni-journey.js"></script>
   <script src="js/inpage-nav.js"></script>
+  <script src="js/send-mail.js"></script>
   <!-- <script src="js/numu-journey.js"></script>
   <script src="js/chi-journey.js"></script> -->
   <script src="js/change-skills.js"></script>
