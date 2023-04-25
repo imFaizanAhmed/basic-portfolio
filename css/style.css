@@ -306,8 +306,9 @@ nav [class*="fa-"]:hover {
   padding: 1rem;
   box-shadow: 0 0 4px 0 var(--shadow);
   height: fit-content;
-  max-height: 90px;
-  cursor: context-menu;
+  /* max-height: 90px; */
+  cursor: pointer;
+  /* cursor: context-menu; */
 }
 
 #skills .skill-logo {
@@ -1097,3 +1098,21 @@ html::-webkit-scrollbar-thumb:active {
   background: rgb(68, 68, 68);
   border-radius: 10px; 
 } */
+
+.filter-element {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  overflow: hidden;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  top: calc(50vh - 75px);
+  right: 50vw;
+  height: 150px;
+}
