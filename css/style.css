@@ -290,7 +290,8 @@ nav [class*="fa-"]:hover {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; */
+  transition: all 0.3s ease-in-out;
+   */
   animation: appear 1s;
 }
 
@@ -1106,13 +1107,39 @@ html::-webkit-scrollbar-thumb:active {
 }
 
 .modal {
-  display: block;
-  position: fixed;
+  background-color: var(--text-color);
+  color: var(--primary);
+  border-radius: 10px;
+  /* box-shadow: 8px -8px 12px 0px var(--shadow); */
+  border: 1px solid var(--text-color);
+}
+
+.modal-body {
+  max-height: 250px;
+  overflow-y: auto;
+  width: 75vw;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.modal-header {
+  background-color: var(--primary);
+  height: 32px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  background-color: blue;
-  top: calc(50vh - 75px);
-  right: 50vw;
-  height: 150px;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: var(--button-color);
+}
+
+.close-modal {
+  background-image: var(--close-svg);
+  height: 16px;
+  width: 16px;
 }
