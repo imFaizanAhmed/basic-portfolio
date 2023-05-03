@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body class="light-theme">
-  <div class="filter-element">
+<body class="dark-theme">
+  <div id="main-body" class="filter-element">
     <span id="menuToggle">
       <input id="menuToggleInput" type="checkbox" />
       <span></span>
@@ -577,14 +577,14 @@
     </div>
   </div>
 
-  <div
-    style="height: 100vh; width: 100vw; position: fixed; top: 0px; display: flex; justify-content: center; align-items: center;">
+  <div id="modal"
+    style=" height: 100vh; width: 100vw; position: fixed; top: 0px; display: flex; justify-content: center; align-items: center;">
     <div class="modal">
       <div class="modal-header">
         <span class="modal-title">
           MySQL Workbench
         </span>
-        <span class="close-modal">
+        <span id="close-modal" class="close-modal">
         </span>
       </div>
       <div class="modal-body">
@@ -609,9 +609,34 @@
   <script src="js/uni-journey.js"></script>
   <script src="js/inpage-nav.js"></script>
   <script src="js/send-mail.js"></script>
+  <script src="js/modal.js"></script>
   <!-- <script src="js/numu-journey.js"></script>
   <script src="js/chi-journey.js"></script> -->
   <script src="js/change-skills.js"></script>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBLyLPAf1zx9jt2BB_pISbhRznyRexhxVo",
+      authDomain: "portfolio-41200.firebaseapp.com",
+      projectId: "portfolio-41200",
+      storageBucket: "portfolio-41200.appspot.com",
+      messagingSenderId: "162448434360",
+      appId: "1:162448434360:web:ac891a216c8e0bc55c004d"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    console.log("numu app", app);
+  </script>
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
