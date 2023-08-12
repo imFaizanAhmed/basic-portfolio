@@ -788,6 +788,11 @@ footer a span:hover {
 }
 
 /* ========== media query for navigation ============ */
+@media (min-width: 965px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 850px) {
   .prefix {
     display: inline;
@@ -799,7 +804,7 @@ footer a span:hover {
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .name span {
@@ -835,23 +840,27 @@ footer a span:hover {
 
 @media (max-width: 562px) {
   #intro {
-    margin-top: 134px;
-    min-height: calc(100svh - 137px);
+    margin-top: 61px;
+    min-height: calc(100svh - 64px);
   }
 
   h2 {
-    font-size: 6vw;
+    font-size: 2rem;
   }
 
   .cursor {
-    height: 7vw;
+    height: 20px;
   }
 
   p,
-  pre,
   div,
   span {
-    font-size: 3.5vw;
+    font-size: 16px;
+  }
+
+  pre,
+  pre + span {
+    font-size: 1.3rem;
   }
 
   .name span {
@@ -862,11 +871,6 @@ footer a span:hover {
     font-size: 1rem;
   }
 
-  #menuToggle span {
-    width: 22px !important;
-    height: 3px !important;
-  }
-
   footer div {
     font-size: 5vw;
   }
@@ -874,15 +878,12 @@ footer a span:hover {
 
 @media (max-width: 344px) {
   #intro {
-    margin-top: 166px;
-    min-height: calc(100svh - 169px);
-  }
-  h2 {
-    font-size: 4vw;
+    margin-top: 115px;
+    min-height: calc(100svh - 119px);
   }
 
   .name span {
-    font-size: 4.5vw;
+    font-size: 16px;
   }
 
   nav li:first-child {

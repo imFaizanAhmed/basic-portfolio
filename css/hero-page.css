@@ -2,11 +2,6 @@
 :root {
   --black: #171321;
   --dkblue: #0d314b;
-  --plum: #4b0d49;
-  --hotmag: #ff17e4;
-  --magenta: #e310cb;
-  --aqua: #86fbfb;
-  --green: #646f60;
   --white: #f7f8fa;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
@@ -50,7 +45,7 @@
   --text-color-shade2: #f9004d;
   /* for buttons */
   --button-color: #f9004d;
-  --button-color-shade2: #b40d41;
+  --button-color-shade2: #fcfbfe;
   /* gradient color */
   --gradient-color: #c8c8c8;
   --gradient-color-shade2: #706f6f;
@@ -61,12 +56,39 @@
   --background-image: url("/img/dark\ background\ (1).png");
   --background-gradient: linear-gradient(
     63deg,
-    rgba(60, 60, 60, 0.1) 0%,
+    rgba(60, /60, 60, 0.1) 0%,
     rgba(0, 0, 0, 0.5) 90%
   );
   transition: all 1s ease-out;
   -webkit-transition: all 1s ease-in-out;
 }
+
+/* .dark-theme { */
+/* for section backgrounds */
+/* --primary: #2b6777; */
+/* --primary-shade2: #254f5a; */
+/* for text backgrounds */
+/* --text-color: #fcfbfe; */
+/* --text-color-shade2: #52ab98; */
+/* for buttons */
+/* --button-color: #7affe3; */
+/* --button-color-shade2: #f2f2f2; */
+/* gradient color */
+/* --gradient-color: #c8c8c8; */
+/* --gradient-color-shade2: #706f6f; */
+/* shadow */
+/* --shadow: rgba(225, 225, 225, 0.15); */
+/* --highlighted-section: #00c99e; */
+/* bg image */
+/* --background-image: url("/img/dark\ background\ (1).png"); */
+/* --background-gradient: linear-gradient( */
+/* 63deg, */
+/* rgba(60, 60, 60, 0.1) 0%, */
+/* rgba(0, 0, 0, 0.5) 90% */
+/* ); */
+/* transition: all 1s ease-out; */
+/* -webkit-transition: all 1s ease-in-out; */
+/* } */
 
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
@@ -124,8 +146,8 @@ pre {
 /* intro styles */
 #intro {
   padding: 0rem 2rem;
-  margin-top: 102px;
-  min-height: calc(100svh - 105px);
+  margin-top: 75px;
+  min-height: calc(100svh - 79px);
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
@@ -135,6 +157,12 @@ pre {
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 1s ease-in-out;
+}
+
+@media screen and (min-width: 652px) {
+  #intro .my-image-mobile {
+    width: 160px;
+  }
 }
 
 #into div {
@@ -161,11 +189,55 @@ pre {
   font-weight: 300;
 }
 
-h2 {
-  font-size: 6vw;
-}
-
 .typed-text {
   font-weight: normal;
   color: var(--text-color-shade2);
+}
+
+.about-me-div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  z-index: 1;
+  gap: 2rem;
+}
+
+.my-image-mobile {
+  display: block;
+  min-width: 230px;
+  width: 230px;
+  align-self: center;
+  margin-bottom: 8px;
+  background-color: var(--text-color);
+  border-radius: 4% 30%;
+  overflow: hidden;
+}
+
+.about-me-desc {
+  min-width: 500px;
+}
+
+@media screen and (max-width: 780px) {
+  .my-image-mobile {
+    display: block;
+    min-width: 130px;
+    width: 130px;
+    align-self: center;
+    margin-bottom: 8px;
+    background-color: var(--text-color);
+    border-radius: 4% 30%;
+    overflow: hidden;
+  }
+  .about-me-div {
+    flex-direction: column;
+  }
+
+  .about-me-desc {
+    min-width: unset;
+  }
+}
+
+.text-color {
+  color: var(--text-color) !important;
 }
