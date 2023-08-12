@@ -348,6 +348,21 @@ nav [class*="fa-"]:hover {
   padding: 1rem;
 }
 
+#projects .subtitle {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: calc(2.5rem * 0.75);
+}
+
+#projects .subtitle svg {
+  height: 24px;
+  width: 24px;
+}
+
+#projects .subtitle path {
+  fill: var(--text-color);
+}
+
 footer {
   text-align: center;
   padding: 1rem 1rem;
