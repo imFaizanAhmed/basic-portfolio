@@ -218,6 +218,11 @@ pre {
   min-width: 500px;
 }
 
+@media screen and (min-width: 980px) {
+  .about-me-desc {
+    min-width: 600px;
+  }
+}
 @media screen and (max-width: 780px) {
   .my-image-mobile {
     display: block;

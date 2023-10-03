@@ -790,7 +790,7 @@ footer a span:hover {
 /* ========== media query for navigation ============ */
 @media (min-width: 965px) {
   h2 {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 }
 @media (min-width: 850px) {
