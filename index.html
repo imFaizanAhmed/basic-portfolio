@@ -167,14 +167,6 @@
       <h2>
         My journey till now
       </h2>
-      <!-- <div style="text-transform: capitalize;
-    padding-bottom: 32px;
-    /* border-bottom: 1px solid; */
-    position: absolute;
-    transform: rotateZ(90deg) translateY(120px);
-    top: 50%;">
-      1.5+ years of experiance
-    </div> -->
       <ul class="timeline">
 
         <li>
@@ -183,11 +175,54 @@
               <span class="flag"><a href="https://numuworld.com/" target="_blank">Numuworld</a></span>
               <span class="time-wrapper"><span class="time">Aug 2022 - present</span></span>
             </div>
-            <div id="numu" class="desc overflow-card">My current employment. Here I am working on <span>React</span> -
+
+            <div class="milestone desc" onclick="toggleDetails(this)" style="--i: 0">
+              <p>Project Title: Responsive Web Design</p>
+              <p>Dates: Jan 2018 - Dec 2018</p>
+              <div class="details">
+                <div class="content">
+                  <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+                  <p>
+                    <strong>Highlights:</strong> Developed a responsive website,
+                    Improved SEO, Optimized page load times.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div id="numu" class="desc overflow-card">My current employment. Here I am working on <span>React</span> -
               <span>NodeJs</span> - <span>MySQL</span>. <span class="text-color">Learn more</span><span
                 id="numu-loadmore"></span><span id="numu-cursor"></span>
-              <!-- class="small-cursor" -->
+              <!-- class="small-cursor" -- >
+            </div> -->
+          </div>
+        </li>
+        <li>
+          <div data-aos="dir-l" class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="https://numuworld.com/" target="_blank">Numuworld</a></span>
+              <span class="time-wrapper"><span class="time">Aug 2022 - present</span></span>
             </div>
+
+            <div class="milestone desc" onclick="toggleDetails(this)" style="--i: 0">
+              <p>Project Title: Responsive Web Design</p>
+              <p>Dates: Jan 2018 - Dec 2018</p>
+              <div class="details">
+                <div class="content">
+                  <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+                  <p>
+                    <strong>Highlights:</strong> Developed a responsive website,
+                    Improved SEO, Optimized page load times.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div id="numu" class="desc overflow-card">My current employment. Here I am working on <span>React</span> -
+              <span>NodeJs</span> - <span>MySQL</span>. <span class="text-color">Learn more</span><span
+                id="numu-loadmore"></span><span id="numu-cursor"></span>
+              <!-- class="small-cursor" -- >
+            </div> -->
           </div>
         </li>
 
@@ -508,7 +543,7 @@ Freelance Projects
         <svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M11.303 8l11.394 7.997L11.303 24z"/></svg>
 Personal Projects
       </div>
-      <article class="reverse">
+      <article>
         <div class="text">
           <!-- <h4>Latest Project</h4> -->
           <h3>Web Portfolio</h3>
@@ -526,7 +561,7 @@ Personal Projects
         </div>
         <img src="img/projects/portfolio.svg" alt="Portfolio" />
       </article>
-      <article>
+      <article class="reverse">
         <div class="text">
           <!-- <h4>Latest Project</h4> -->
           <h3>Find Trends</h3>
@@ -618,9 +653,11 @@ Personal Projects
   <script src="js/scroll-to-view.js"></script>
   <script src="js/change-theme.js"></script>
   <script src="js/timeline.js"></script>
+  <script src="js/show-detail.js"></script>
   <script src="js/uni-journey.js"></script>
   <script src="js/inpage-nav.js"></script>
   <script src="js/send-mail.js"></script>
+  <!-- ! deprecated -->
   <!-- <script src="js/numu-journey.js"></script>
   <script src="js/chi-journey.js"></script> -->
   <script src="js/change-skills.js"></script>

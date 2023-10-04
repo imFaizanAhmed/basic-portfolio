@@ -9,15 +9,10 @@
   position: relative;
 }
 
-.section-blue {
-  background-color: var(--dkblue);
-}
-
 .blackbox {
-  background-color: var(--black);
+  background-color: var(--dk-section-color);
   padding: 1rem;
   border-radius: 10px;
-  color: var(--white);
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -649,9 +644,6 @@ footer a span:hover {
   color: var(--text-color-shade2);
 }
 
-.direction-r .desc {
-  margin: 1em 0 0 0.75em;
-}
 
 /* ================ Timeline Media Queries ================ */
 
@@ -735,7 +727,6 @@ footer a span:hover {
   .direction-l .desc,
   .direction-r .desc {
     position: relative;
-    margin: 1em 1em 0 1em;
     padding: 1em;
   }
 
@@ -792,13 +783,6 @@ footer a span:hover {
 
   #projects .reverse ul {
     justify-content: flex-start;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .direction-l .desc,
-  .direction-r .desc {
-    margin: 1em 3em 0 3em;
   }
 }
 
@@ -1093,22 +1077,36 @@ html::-webkit-scrollbar {
   width: 0px;
 }
 
-/* html::-webkit-scrollbar-track {
-  background: rgb(179, 177, 177);
-  border-radius: 10px;
+.milestone {
+  position: relative;
+  padding: 20px;
+  background-color: var(--dk-section-color);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  animation: shadowPulse 2s infinite;
+  animation-delay: calc(0.5s * var(--i));
+}
+.details {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: max-height 0.5s ease-in-out;
+}
+.details.open {
+  max-height: 10em; /* Adjust this value as needed */
+  padding: 0px 10px;
+}
+.details.open .content {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-html::-webkit-scrollbar-thumb {
-  background: rgb(136, 136, 136);
-  border-radius: 10px;
+.content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
-html::-webkit-scrollbar-thumb:hover {
-  background: rgb(100, 100, 100);
-  border-radius: 10px;
-}
-
-html::-webkit-scrollbar-thumb:active {
-  background: rgb(68, 68, 68);
-  border-radius: 10px; 
-} */
