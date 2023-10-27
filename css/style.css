@@ -105,12 +105,11 @@ nav {
   z-index: 100;
 }
 
-nav .tooltip {
-  position: fixed;
+.theme-icon .tooltip {
+  position: relative;
   visibility: hidden;
-  top: 4rem;
-  left: 54%;
-  cursor: pointer;
+  top: 8px;
+  right: 57px;
   padding: 0.5rem;
   overflow: hidden;
   width: 136px;
@@ -122,9 +121,12 @@ nav .tooltip {
 }
 
 nav .theme-icon {
-  width: calc(2rem - 4px);
+  /* width: calc(2rem - 4px); */
+  height: 28px;
   aspect-ratio: 1/1;
   margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
 
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -136,13 +138,12 @@ nav .theme-icon {
   -webkit-animation-iteration-count: infinite;
 }
 
-nav .theme-icon:hover {
-  cursor: pointer;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
+.theme-icon:hover #theme-icon {
+  animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
 }
 
-.theme-icon:hover + .tooltip {
+.theme-icon:hover .tooltip {
   visibility: visible;
   animation: tooltip-animation 0.5s;
   -moz-animation: tooltip-animation 0.5s;
@@ -808,22 +809,6 @@ footer a span:hover {
 
   .name span {
     font-size: 4rem;
-  }
-
-  nav .tooltip {
-    position: fixed;
-    visibility: hidden;
-    top: 4rem;
-    left: 170px;
-    cursor: pointer;
-    padding: 0.5rem;
-    overflow: hidden;
-    width: 136px;
-    white-space: nowrap;
-    background-color: var(--text-color);
-    color: var(--primary);
-    opacity: 0.5;
-    border-radius: 0.5rem;
   }
 
   nav li:first-child {
