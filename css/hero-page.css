@@ -1,7 +1,6 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
   --black: #171321;
-  --dkblue: #0d314b;
   --white: #f7f8fa;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
@@ -22,6 +21,8 @@
   /* gradient color */
   --gradient-color: #c8c8c8;
   --gradient-color-shade2: #706f6f;
+  --dk-section-color: #e0e0e0;
+  --dk-section-shadow: rgba(0, 0, 0, 0.3);
   /* shadow */
   --shadow: rgba(0, 0, 0, 0.15);
   --highlighted-section: #98ffcf;
@@ -46,6 +47,9 @@
   /* for buttons */
   --button-color: #f9004d;
   --button-color-shade2: #fcfbfe;
+  /* for hightlighted cards */
+  --dk-section-color: #4a4b4b;
+  --dk-section-shadow: rgb(239 239 239 / 30%);
   /* gradient color */
   --gradient-color: #c8c8c8;
   --gradient-color-shade2: #706f6f;

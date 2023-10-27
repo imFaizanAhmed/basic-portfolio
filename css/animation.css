@@ -133,3 +133,14 @@
   opacity: 1;
   transform: translateY(0px);
 }
+
+/* shows the moving shadows */
+@keyframes shadowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--dk-section-shadow);
+  }
+  50% {
+    box-shadow: 0 4px 20px 0 var(--dk-section-shadow);
+  }
+}
