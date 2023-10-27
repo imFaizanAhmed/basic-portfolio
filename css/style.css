@@ -1084,6 +1084,7 @@ html::-webkit-scrollbar {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  text-align: left;
   /* animation: shadowPulse 2s infinite;
   animation-delay: calc(0.5s * var(--i)); */
 }
@@ -1125,7 +1126,7 @@ html::-webkit-scrollbar {
   transition: max-height 0.5s ease-in-out;
 }
 .details.open {
-  max-height: 10em; /* Adjust this value as needed */
+  max-height: 550px; /* Adjust this value as needed */
   padding: 0px 10px;
 }
 .details.open .content {
@@ -1137,4 +1138,25 @@ html::-webkit-scrollbar {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.detail-list {
+  padding: 0px;
+}
+
+.detail-list li {
+  list-style: none;
+  padding-left: 36px;
+  position: relative;
+}
+
+.detail-list li:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background-size: contain;
+  background-image: url("../img/laptop-electronics.svg");
 }
