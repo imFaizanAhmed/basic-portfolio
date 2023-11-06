@@ -175,6 +175,13 @@ nav ul {
   gap: 2rem;
 }
 
+@media screen and (max-width: 1010px) and (min-width: 910px) {
+  nav ul {
+    font-size: 14px;
+  }
+  
+}
+
 nav li > a:not(.Call-to-action-button):not([class*="fa-"]) {
   height: 32px;
 }
