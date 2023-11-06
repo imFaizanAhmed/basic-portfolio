@@ -1,97 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faizan's Portfolio</title>
+    <link rel="icon" href="img/logo/logo.svg" />
+    <link href="css/hero-page.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faizan's Portfolio</title>
-  <link rel="icon" href="img/logo/logo.svg">
-  <link href="css/hero-page.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+  <body class="dark-theme">
+    <span id="menuToggle">
+      <input id="menuToggleInput" type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu"></ul>
+    </span>
+    <div class="mobile-menu none">
+      <a class="pointer about-button">
+        <li>About</li>
+      </a>
+      <a class="pointer journey-button">
+        <li>Journey</li>
+      </a>
+      <a class="pointer project-button">
+        <li>Projects</li>
+      </a>
+      <a class="pointer contact-button">
+        <li>Contact</li>
+      </a>
+    </div>
+    <div class="main">
+      <nav>
+        <ul>
+          <li>
+            <div class="flex">
+              <span style="padding-right: 8px">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 105 114"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.9299 3.88445C21.7966 10.1511 17.9299 16.6845 11.9299 40.9511C7.39659 59.3511 6.59659 67.0844 9.52992 64.1511C10.1966 63.4844 13.1299 54.2845 15.9299 43.6178C21.5299 22.0178 23.3966 17.7511 29.5299 12.0178C42.4633 -0.11555 65.7966 2.01778 76.0633 16.2845C82.0633 24.5511 80.9966 30.6845 72.7299 35.7511C66.7299 39.4845 65.6633 39.3511 64.4633 34.2845C62.5966 25.2178 55.9299 20.1511 48.1966 21.8845C42.1966 23.2178 39.1299 27.4845 35.9299 39.6178C32.9966 50.5511 32.8633 50.6844 26.7299 53.6178C12.1966 60.4178 1.92992 75.8845 0.329918 93.4845C-0.603415 102.818 0.329918 106.551 4.59658 110.818C7.26325 113.484 8.72992 114.018 11.7966 113.351C16.3299 112.418 23.9299 106.818 23.9299 104.551C23.9299 101.218 29.3966 90.5511 31.1299 90.5511C32.1966 90.5511 33.3966 92.0178 33.7966 93.8845C34.3299 95.7511 36.9966 98.6845 39.7966 100.684C52.8633 109.351 70.5966 101.484 70.5966 86.9511C70.5966 84.6845 68.8633 81.7511 65.2633 78.4178L60.0633 73.4845L64.1966 72.0178C70.3299 69.8845 70.5966 70.0178 70.5966 75.7511C70.5966 82.8178 76.8633 102.151 80.8633 107.484C84.4633 112.418 91.5299 114.418 96.7299 112.018C101.263 110.018 104.997 103.351 104.463 98.1511C103.53 89.8845 99.5299 75.0845 96.1966 67.8844C92.9966 61.2178 91.2633 54.8178 92.9966 56.5511C94.4633 58.0178 100.063 47.6178 102.063 39.6178C104.997 28.5511 104.063 18.2845 99.7966 13.7511C95.3966 9.08445 89.6633 9.75112 85.6633 15.6178L82.7299 20.1511L80.8633 15.6178C79.6633 12.8178 76.1966 9.21778 71.3966 5.88445C64.4633 1.08445 63.1299 0.68445 52.8633 0.151117C42.7299 -0.248883 41.3966 -0.11555 33.9299 3.88445ZM97.9299 20.8178C99.7966 22.5511 100.063 24.5511 99.5299 30.0178C98.3299 42.0178 90.0633 54.1511 78.9966 60.1511C75.3966 62.1511 64.9966 66.1511 55.6633 69.2178C32.1966 76.8178 23.2633 84.0178 20.0633 98.2845C17.7966 108.951 11.7966 112.151 6.59658 105.484C-0.736749 96.2845 9.52992 73.0845 25.6633 62.9511C28.3299 61.2178 40.3299 56.5511 52.1966 52.5511C64.0633 48.5511 75.7966 43.6178 78.3299 41.7511C83.5299 37.7511 87.9299 31.0845 87.9299 27.2178C87.9299 23.7511 91.5299 18.5511 93.9299 18.5511C94.8633 18.5511 96.7299 19.6178 97.9299 20.8178ZM57.2633 32.5511C58.3299 34.6845 60.0633 37.0845 60.9966 37.6178C64.3299 39.7511 62.3299 41.0845 50.5966 44.9511C38.4633 48.8178 36.7299 48.5511 40.4633 43.2178C41.3966 41.7511 42.5966 38.6845 43.1299 36.5511C45.3966 27.3511 53.3966 25.0845 57.2633 32.5511ZM95.2633 78.4178C97.7966 87.3511 99.9299 96.8178 99.9299 99.3511C99.9299 107.218 92.0633 111.884 86.1966 107.484C84.4633 106.284 72.4633 71.6178 73.6633 71.2178C81.3966 68.0178 85.6633 65.6178 87.3966 63.7511C88.7299 62.2844 89.9299 61.3511 90.0633 61.6178C90.3299 61.8844 92.5966 69.3511 95.2633 78.4178ZM63.1299 81.3511C67.2633 84.5511 67.6633 89.7511 64.1966 94.0178C56.9966 102.951 41.6633 101.484 36.7299 91.3511C34.3299 86.5511 35.1299 85.3511 43.2633 81.3511C50.3299 77.7511 58.5966 77.7511 63.1299 81.3511Z"
+                    fill="var(--button-color)"
+                  />
+                </svg>
+              </span>
+              <h1>
+                <a class="flex" href="index.html">
+                  <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
+                  <span> F </span>
+                  <span> a </span>
+                  <span> i </span>
+                  <span> z </span>
+                  <span> a </span>
+                  <span> n </span>
+                  <span> &nbsp; </span>
+                  <span> A </span>
+                  <span> h </span>
+                  <span> m </span>
+                  <span> e </span>
+                  <span> d </span>
+                </a>
+              </h1>
 
-<body class="dark-theme">
-  <span id="menuToggle">
-    <input id="menuToggleInput" type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-    </ul>
-  </span>
-  <div class="mobile-menu none">
-    <a class="pointer about-button">
-      <li>About</li>
-    </a>
-    <a class="pointer journey-button">
-      <li>Journey</li>
-    </a>
-    <a class="pointer project-button">
-      <li>Projects</li>
-    </a>
-    <a class="pointer contact-button">
-      <li>Contact</li>
-    </a>
-  </div>
-  <div class="main">
-    <nav>
-      <ul>
-        <li>
-          <div class="flex">
-            <span style="padding-right: 8px">
-              <svg width="28" height="28" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M33.9299 3.88445C21.7966 10.1511 17.9299 16.6845 11.9299 40.9511C7.39659 59.3511 6.59659 67.0844 9.52992 64.1511C10.1966 63.4844 13.1299 54.2845 15.9299 43.6178C21.5299 22.0178 23.3966 17.7511 29.5299 12.0178C42.4633 -0.11555 65.7966 2.01778 76.0633 16.2845C82.0633 24.5511 80.9966 30.6845 72.7299 35.7511C66.7299 39.4845 65.6633 39.3511 64.4633 34.2845C62.5966 25.2178 55.9299 20.1511 48.1966 21.8845C42.1966 23.2178 39.1299 27.4845 35.9299 39.6178C32.9966 50.5511 32.8633 50.6844 26.7299 53.6178C12.1966 60.4178 1.92992 75.8845 0.329918 93.4845C-0.603415 102.818 0.329918 106.551 4.59658 110.818C7.26325 113.484 8.72992 114.018 11.7966 113.351C16.3299 112.418 23.9299 106.818 23.9299 104.551C23.9299 101.218 29.3966 90.5511 31.1299 90.5511C32.1966 90.5511 33.3966 92.0178 33.7966 93.8845C34.3299 95.7511 36.9966 98.6845 39.7966 100.684C52.8633 109.351 70.5966 101.484 70.5966 86.9511C70.5966 84.6845 68.8633 81.7511 65.2633 78.4178L60.0633 73.4845L64.1966 72.0178C70.3299 69.8845 70.5966 70.0178 70.5966 75.7511C70.5966 82.8178 76.8633 102.151 80.8633 107.484C84.4633 112.418 91.5299 114.418 96.7299 112.018C101.263 110.018 104.997 103.351 104.463 98.1511C103.53 89.8845 99.5299 75.0845 96.1966 67.8844C92.9966 61.2178 91.2633 54.8178 92.9966 56.5511C94.4633 58.0178 100.063 47.6178 102.063 39.6178C104.997 28.5511 104.063 18.2845 99.7966 13.7511C95.3966 9.08445 89.6633 9.75112 85.6633 15.6178L82.7299 20.1511L80.8633 15.6178C79.6633 12.8178 76.1966 9.21778 71.3966 5.88445C64.4633 1.08445 63.1299 0.68445 52.8633 0.151117C42.7299 -0.248883 41.3966 -0.11555 33.9299 3.88445ZM97.9299 20.8178C99.7966 22.5511 100.063 24.5511 99.5299 30.0178C98.3299 42.0178 90.0633 54.1511 78.9966 60.1511C75.3966 62.1511 64.9966 66.1511 55.6633 69.2178C32.1966 76.8178 23.2633 84.0178 20.0633 98.2845C17.7966 108.951 11.7966 112.151 6.59658 105.484C-0.736749 96.2845 9.52992 73.0845 25.6633 62.9511C28.3299 61.2178 40.3299 56.5511 52.1966 52.5511C64.0633 48.5511 75.7966 43.6178 78.3299 41.7511C83.5299 37.7511 87.9299 31.0845 87.9299 27.2178C87.9299 23.7511 91.5299 18.5511 93.9299 18.5511C94.8633 18.5511 96.7299 19.6178 97.9299 20.8178ZM57.2633 32.5511C58.3299 34.6845 60.0633 37.0845 60.9966 37.6178C64.3299 39.7511 62.3299 41.0845 50.5966 44.9511C38.4633 48.8178 36.7299 48.5511 40.4633 43.2178C41.3966 41.7511 42.5966 38.6845 43.1299 36.5511C45.3966 27.3511 53.3966 25.0845 57.2633 32.5511ZM95.2633 78.4178C97.7966 87.3511 99.9299 96.8178 99.9299 99.3511C99.9299 107.218 92.0633 111.884 86.1966 107.484C84.4633 106.284 72.4633 71.6178 73.6633 71.2178C81.3966 68.0178 85.6633 65.6178 87.3966 63.7511C88.7299 62.2844 89.9299 61.3511 90.0633 61.6178C90.3299 61.8844 92.5966 69.3511 95.2633 78.4178ZM63.1299 81.3511C67.2633 84.5511 67.6633 89.7511 64.1966 94.0178C56.9966 102.951 41.6633 101.484 36.7299 91.3511C34.3299 86.5511 35.1299 85.3511 43.2633 81.3511C50.3299 77.7511 58.5966 77.7511 63.1299 81.3511Z" fill="var(--button-color)"/>
-              </svg>
-            </span>
-            <h1>
-              <a class="flex" href="index.html">
-                <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
-                <span>
-                  F
-                </span>
-                <span>
-                  a
-                </span>
-                <span>
-                  i
-                </span>
-                <span>
-                  z
-                </span>
-                <span>
-                  a
-                </span>
-                <span>
-                  n
-                </span>
-                <span>
-                  &nbsp;
-                </span>
-                <span>
-                  A
-                </span>
-                <span>
-                  h
-                </span>
-                <span>
-                  m
-                </span>
-                <span>
-                  e
-                </span>
-                <span>
-                  d
-                </span>
-              </a>
-            </h1>
-
-            <div class="theme-icon">
-              <img id="theme-icon" src="img/moon-icon.svg" />
-              <span class="tooltip">Change Theme</span>
+              <div class="theme-icon">
+                <img id="theme-icon" src="img/moon-icon.svg" />
+                <span class="tooltip">Change Theme</span>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
           <li role="web-menu-item">
             <a class="pointer about-button"> About </a>
@@ -307,12 +290,12 @@
             <div data-aos="dir-l" class="direction-l">
               <div class="flag-wrapper">
                 <span class="flag"
-                  ><a href="https://numuworld.com/" target="_blank"
-                    >Numuworld</a
+                  ><a href="https://www.cognitivehealthintl.com/" target="_blank"
+                    >Cognitive Healthcare International</a
                   ></span
                 >
                 <span class="time-wrapper"
-                  ><span class="time">Aug 2022 - present</span></span
+                  ><span class="time">July 2022 - July 2021</span></span
                 >
               </div>
 
@@ -596,15 +579,17 @@
           </svg>
           Freelance Projects
         </div>
-        <article>
+        <article class="reverse">
           <div class="text">
             <!-- <h4>Latest Project</h4> -->
             <h3>Golf Event Manager</h3>
             <p class="blackbox">
-              developing a dynamic social media app catering to the Golf
-              community, facilitating seamless interactions among golf players
-              for post uploading, viewing, and commenting. Users can organize
-              golf event and players can take path on them.
+              Developed a web application catering to golf enthusiasts, enabling
+              event creation and discovery with integrated
+              <b> Google Maps API </b> for event location visualization.
+              Implemented a user-friendly interface for real-time event
+              tracking, score submission, and progress monitoring through
+              interactive charts.
             </p>
 
             <h4>Technologies used include</h4>
@@ -613,9 +598,30 @@
               <li>Ant Design</li>
               <li>Tailwinds</li>
               <li>React Query</li>
+              <li>Google Maps</li>
             </ul>
           </div>
           <img src="img/projects/golf project.png" alt="transactions" />
+        </article>
+        <article>
+          <div class="text">
+            <!-- <h4>Latest Project</h4> -->
+            <h3>LocalSeedPro</h3>
+            <p class="blackbox">
+              Developed the frontend for an AI application predicting optimal
+              seeds for planting based on location and climate data. Crafted a
+              responsive UI for data visualization, enabling user-friendly
+              access to predictive analytics.
+            </p>
+            <h4>Technologies used include</h4>
+            <ul>
+              <li>React</li>
+              <li>Material-ui</li>
+              <li>Formik</li>
+            </ul>
+          </div>
+          <!-- <img src="img/projects/transaction project.svg" alt="transactions" /> -->
+          <img src="img/projects/localSeedPro.jpeg" alt="localSeedPro" />
         </article>
         <article class="reverse">
           <div class="text">
