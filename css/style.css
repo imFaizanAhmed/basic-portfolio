@@ -802,6 +802,13 @@ footer a span:hover {
   }
 }
 
+@media screen and (max-width: 975px) and (min-width: 910px) {
+  nav ul {
+    font-size: 14px;
+  }
+  
+}
+
 /* ========== media query for navigation ============ */
 @media (min-width: 965px) {
   h2 {
