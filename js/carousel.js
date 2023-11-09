@@ -17,7 +17,7 @@ document.getElementById('prevBtn').addEventListener('click', () => {
 
 function updateCarousel() {
     slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - currentIndex)}%)`;
+        slide.style.transform = `translateX(${(100 * (index - currentIndex)) - 3}%)`;
     });
 }
 

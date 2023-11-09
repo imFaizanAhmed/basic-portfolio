@@ -15,6 +15,8 @@
   border-radius: 10px;
   font-size: 1rem;
   line-height: 1.5;
+  position: relative;
+  z-index: 10;
 }
 
 .gradient {
@@ -345,7 +347,7 @@ nav [class*="fa-"]:hover {
   font-size: 1rem;
 }
 
-#projects img {
+#projects .carousel {
   margin: 2rem 0 4rem 0;
   border-radius: 25px;
   padding: 1rem;
@@ -755,7 +757,7 @@ footer a span:hover {
     gap: 1rem;
   }
 
-  #projects img {
+  #projects .carousel {
     /*  from column 1 to 6    */
     grid-column: 1/6;
     grid-row: 1/2;
@@ -774,7 +776,7 @@ footer a span:hover {
     justify-content: flex-end;
   }
 
-  #projects .reverse img {
+  #projects .reverse .carousel {
     grid-column: 6/11;
     grid-row: 1/2;
     border-left: none;
@@ -1154,7 +1156,7 @@ html::-webkit-scrollbar {
 }
 
 .carousel {
-  width: 500px;
+  /* width: 500px; */
   height: 300px;
   overflow: hidden;
   position: relative;
@@ -1166,5 +1168,6 @@ html::-webkit-scrollbar {
   background-size: cover;
   background-position: center;
   position: absolute;
+  margin-right: 1rem;
   transition: 0.5s ease;
 }
