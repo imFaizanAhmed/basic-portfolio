@@ -125,6 +125,7 @@ nav {
 nav .theme-icon {
   /* width: calc(2rem - 4px); */
   height: 28px;
+  width: 28px;
   aspect-ratio: 1/1;
   margin-left: 1rem;
   cursor: pointer;
@@ -138,6 +139,11 @@ nav .theme-icon {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
+}
+
+#theme-icon {
+  height: 28px;
+  width: 28px;
 }
 
 .theme-icon:hover #theme-icon {
