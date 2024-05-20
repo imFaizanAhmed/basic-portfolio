@@ -565,7 +565,6 @@ footer a span:hover {
 .direction-r .flag:before {
   position: absolute;
   top: 50%;
-  right: -40px;
   content: " ";
   display: block;
   width: 20px;
@@ -578,6 +577,9 @@ footer a span:hover {
 
 .direction-r .flag:before {
   left: -40px;
+}
+.direction-l .flag:before {
+  right: -45px;
 }
 
 .direction-l .flag:after {
