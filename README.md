@@ -1,1 +1,1 @@
-(Live portfolio) [https://imfaizanahmed.vercel.app/]
+[Live portfolio](https://imfaizanahmed.vercel.app/)
