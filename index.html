@@ -1,705 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Faizan's Portfolio</title>
-    <link rel="icon" href="img/logo/logo.svg" />
-    <link href="css/hero-page.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
 
-  <body class="dark-theme">
-    <span id="menuToggle">
-      <input id="menuToggleInput" type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-      <ul id="menu"></ul>
-    </span>
-    <div class="mobile-menu none">
-      <a class="pointer about-button">
-        <li>About</li>
-      </a>
-      <a class="pointer journey-button">
-        <li>Journey</li>
-      </a>
-      <a class="pointer project-button">
-        <li>Projects</li>
-      </a>
-      <a class="pointer contact-button">
-        <li>Contact</li>
-      </a>
-    </div>
-    <div class="main">
-      <nav>
-        <ul>
-          <li>
-            <div class="flex">
-              <span style="padding-right: 8px">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 105 114"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M33.9299 3.88445C21.7966 10.1511 17.9299 16.6845 11.9299 40.9511C7.39659 59.3511 6.59659 67.0844 9.52992 64.1511C10.1966 63.4844 13.1299 54.2845 15.9299 43.6178C21.5299 22.0178 23.3966 17.7511 29.5299 12.0178C42.4633 -0.11555 65.7966 2.01778 76.0633 16.2845C82.0633 24.5511 80.9966 30.6845 72.7299 35.7511C66.7299 39.4845 65.6633 39.3511 64.4633 34.2845C62.5966 25.2178 55.9299 20.1511 48.1966 21.8845C42.1966 23.2178 39.1299 27.4845 35.9299 39.6178C32.9966 50.5511 32.8633 50.6844 26.7299 53.6178C12.1966 60.4178 1.92992 75.8845 0.329918 93.4845C-0.603415 102.818 0.329918 106.551 4.59658 110.818C7.26325 113.484 8.72992 114.018 11.7966 113.351C16.3299 112.418 23.9299 106.818 23.9299 104.551C23.9299 101.218 29.3966 90.5511 31.1299 90.5511C32.1966 90.5511 33.3966 92.0178 33.7966 93.8845C34.3299 95.7511 36.9966 98.6845 39.7966 100.684C52.8633 109.351 70.5966 101.484 70.5966 86.9511C70.5966 84.6845 68.8633 81.7511 65.2633 78.4178L60.0633 73.4845L64.1966 72.0178C70.3299 69.8845 70.5966 70.0178 70.5966 75.7511C70.5966 82.8178 76.8633 102.151 80.8633 107.484C84.4633 112.418 91.5299 114.418 96.7299 112.018C101.263 110.018 104.997 103.351 104.463 98.1511C103.53 89.8845 99.5299 75.0845 96.1966 67.8844C92.9966 61.2178 91.2633 54.8178 92.9966 56.5511C94.4633 58.0178 100.063 47.6178 102.063 39.6178C104.997 28.5511 104.063 18.2845 99.7966 13.7511C95.3966 9.08445 89.6633 9.75112 85.6633 15.6178L82.7299 20.1511L80.8633 15.6178C79.6633 12.8178 76.1966 9.21778 71.3966 5.88445C64.4633 1.08445 63.1299 0.68445 52.8633 0.151117C42.7299 -0.248883 41.3966 -0.11555 33.9299 3.88445ZM97.9299 20.8178C99.7966 22.5511 100.063 24.5511 99.5299 30.0178C98.3299 42.0178 90.0633 54.1511 78.9966 60.1511C75.3966 62.1511 64.9966 66.1511 55.6633 69.2178C32.1966 76.8178 23.2633 84.0178 20.0633 98.2845C17.7966 108.951 11.7966 112.151 6.59658 105.484C-0.736749 96.2845 9.52992 73.0845 25.6633 62.9511C28.3299 61.2178 40.3299 56.5511 52.1966 52.5511C64.0633 48.5511 75.7966 43.6178 78.3299 41.7511C83.5299 37.7511 87.9299 31.0845 87.9299 27.2178C87.9299 23.7511 91.5299 18.5511 93.9299 18.5511C94.8633 18.5511 96.7299 19.6178 97.9299 20.8178ZM57.2633 32.5511C58.3299 34.6845 60.0633 37.0845 60.9966 37.6178C64.3299 39.7511 62.3299 41.0845 50.5966 44.9511C38.4633 48.8178 36.7299 48.5511 40.4633 43.2178C41.3966 41.7511 42.5966 38.6845 43.1299 36.5511C45.3966 27.3511 53.3966 25.0845 57.2633 32.5511ZM95.2633 78.4178C97.7966 87.3511 99.9299 96.8178 99.9299 99.3511C99.9299 107.218 92.0633 111.884 86.1966 107.484C84.4633 106.284 72.4633 71.6178 73.6633 71.2178C81.3966 68.0178 85.6633 65.6178 87.3966 63.7511C88.7299 62.2844 89.9299 61.3511 90.0633 61.6178C90.3299 61.8844 92.5966 69.3511 95.2633 78.4178ZM63.1299 81.3511C67.2633 84.5511 67.6633 89.7511 64.1966 94.0178C56.9966 102.951 41.6633 101.484 36.7299 91.3511C34.3299 86.5511 35.1299 85.3511 43.2633 81.3511C50.3299 77.7511 58.5966 77.7511 63.1299 81.3511Z"
-                    fill="var(--button-color)"
-                  />
-                </svg>
-              </span>
-              <h1>
-                <a class="flex" href="index.html">
-                  <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
-                  <span> F </span>
-                  <span> a </span>
-                  <span> i </span>
-                  <span> z </span>
-                  <span> a </span>
-                  <span> n </span>
-                  <span> &nbsp; </span>
-                  <span> A </span>
-                  <span> h </span>
-                  <span> m </span>
-                  <span> e </span>
-                  <span> d </span>
-                </a>
-              </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faizan's Portfolio</title>
+  <link rel="icon" href="img/logo/logo.svg" />
+  <link href="css/hero-page.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-              <div class="theme-icon">
-                <img id="theme-icon" src="img/moon-icon.svg" />
-                <span class="tooltip">Change Theme</span>
-              </div>
+<body class="dark-theme">
+  <span id="menuToggle">
+    <input id="menuToggleInput" type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu"></ul>
+  </span>
+  <div class="mobile-menu none">
+    <a class="pointer about-button">
+      <li>About</li>
+    </a>
+    <a class="pointer journey-button">
+      <li>Journey</li>
+    </a>
+    <a class="pointer project-button">
+      <li>Projects</li>
+    </a>
+    <a class="pointer contact-button">
+      <li>Contact</li>
+    </a>
+  </div>
+  <div class="main">
+    <nav>
+      <ul>
+        <li>
+          <div class="flex">
+            <span style="padding-right: 8px">
+              <svg width="28" height="28" viewBox="0 0 105 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M33.9299 3.88445C21.7966 10.1511 17.9299 16.6845 11.9299 40.9511C7.39659 59.3511 6.59659 67.0844 9.52992 64.1511C10.1966 63.4844 13.1299 54.2845 15.9299 43.6178C21.5299 22.0178 23.3966 17.7511 29.5299 12.0178C42.4633 -0.11555 65.7966 2.01778 76.0633 16.2845C82.0633 24.5511 80.9966 30.6845 72.7299 35.7511C66.7299 39.4845 65.6633 39.3511 64.4633 34.2845C62.5966 25.2178 55.9299 20.1511 48.1966 21.8845C42.1966 23.2178 39.1299 27.4845 35.9299 39.6178C32.9966 50.5511 32.8633 50.6844 26.7299 53.6178C12.1966 60.4178 1.92992 75.8845 0.329918 93.4845C-0.603415 102.818 0.329918 106.551 4.59658 110.818C7.26325 113.484 8.72992 114.018 11.7966 113.351C16.3299 112.418 23.9299 106.818 23.9299 104.551C23.9299 101.218 29.3966 90.5511 31.1299 90.5511C32.1966 90.5511 33.3966 92.0178 33.7966 93.8845C34.3299 95.7511 36.9966 98.6845 39.7966 100.684C52.8633 109.351 70.5966 101.484 70.5966 86.9511C70.5966 84.6845 68.8633 81.7511 65.2633 78.4178L60.0633 73.4845L64.1966 72.0178C70.3299 69.8845 70.5966 70.0178 70.5966 75.7511C70.5966 82.8178 76.8633 102.151 80.8633 107.484C84.4633 112.418 91.5299 114.418 96.7299 112.018C101.263 110.018 104.997 103.351 104.463 98.1511C103.53 89.8845 99.5299 75.0845 96.1966 67.8844C92.9966 61.2178 91.2633 54.8178 92.9966 56.5511C94.4633 58.0178 100.063 47.6178 102.063 39.6178C104.997 28.5511 104.063 18.2845 99.7966 13.7511C95.3966 9.08445 89.6633 9.75112 85.6633 15.6178L82.7299 20.1511L80.8633 15.6178C79.6633 12.8178 76.1966 9.21778 71.3966 5.88445C64.4633 1.08445 63.1299 0.68445 52.8633 0.151117C42.7299 -0.248883 41.3966 -0.11555 33.9299 3.88445ZM97.9299 20.8178C99.7966 22.5511 100.063 24.5511 99.5299 30.0178C98.3299 42.0178 90.0633 54.1511 78.9966 60.1511C75.3966 62.1511 64.9966 66.1511 55.6633 69.2178C32.1966 76.8178 23.2633 84.0178 20.0633 98.2845C17.7966 108.951 11.7966 112.151 6.59658 105.484C-0.736749 96.2845 9.52992 73.0845 25.6633 62.9511C28.3299 61.2178 40.3299 56.5511 52.1966 52.5511C64.0633 48.5511 75.7966 43.6178 78.3299 41.7511C83.5299 37.7511 87.9299 31.0845 87.9299 27.2178C87.9299 23.7511 91.5299 18.5511 93.9299 18.5511C94.8633 18.5511 96.7299 19.6178 97.9299 20.8178ZM57.2633 32.5511C58.3299 34.6845 60.0633 37.0845 60.9966 37.6178C64.3299 39.7511 62.3299 41.0845 50.5966 44.9511C38.4633 48.8178 36.7299 48.5511 40.4633 43.2178C41.3966 41.7511 42.5966 38.6845 43.1299 36.5511C45.3966 27.3511 53.3966 25.0845 57.2633 32.5511ZM95.2633 78.4178C97.7966 87.3511 99.9299 96.8178 99.9299 99.3511C99.9299 107.218 92.0633 111.884 86.1966 107.484C84.4633 106.284 72.4633 71.6178 73.6633 71.2178C81.3966 68.0178 85.6633 65.6178 87.3966 63.7511C88.7299 62.2844 89.9299 61.3511 90.0633 61.6178C90.3299 61.8844 92.5966 69.3511 95.2633 78.4178ZM63.1299 81.3511C67.2633 84.5511 67.6633 89.7511 64.1966 94.0178C56.9966 102.951 41.6633 101.484 36.7299 91.3511C34.3299 86.5511 35.1299 85.3511 43.2633 81.3511C50.3299 77.7511 58.5966 77.7511 63.1299 81.3511Z"
+                  fill="var(--button-color)" />
+              </svg>
+            </span>
+            <h1>
+              <a class="flex" href="index.html">
+                <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
+                <span> F </span>
+                <span> a </span>
+                <span> i </span>
+                <span> z </span>
+                <span> a </span>
+                <span> n </span>
+                <span> &nbsp; </span>
+                <span> A </span>
+                <span> h </span>
+                <span> m </span>
+                <span> e </span>
+                <span> d </span>
+              </a>
+            </h1>
+
+            <div class="theme-icon">
+              <img id="theme-icon" src="img/moon-icon.svg" />
+              <span class="tooltip">Change Theme</span>
             </div>
-          </li>
-
-          <li role="web-menu-item">
-            <a class="pointer about-button"> About </a>
-          </li>
-          <li role="web-menu-item">
-            <a class="pointer journey-button"> Journey </a>
-          </li>
-          <li role="web-menu-item">
-            <a class="pointer project-button"> Projects </a>
-          </li>
-          <li role="web-menu-item">
-            <a class="pointer contact-button"> Contact </a>
-          </li>
-          <li role="web-menu-item">
-            <a
-              href="https://www.linkedin.com/in/faizanahmed99/"
-              target="_blank"
-              class="alias"
-            >
-              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-              <span class="sr-only"> Linkedin </span>
-            </a>
-          </li>
-          <li role="web-menu-item">
-            <a
-              href="https://github.com/imFaizanAhmed"
-              target="_blank"
-              class="alias"
-            >
-              <span class="fa-brands fa-github" aria-hidden="true"></span>
-              <span class="sr-only"> Github </span>
-            </a>
-          </li>
-          <li role="web-menu-item">
-            <a
-              href="https://medium.com/@imfaizanahmed"
-              target="_blank"
-              class="alias"
-            >
-              <span class="fa-brands fa-medium" aria-hidden="true"></span>
-              <span class="sr-only"> Medium </span>
-            </a>
-          </li>
-          <li role="web-menu-item">
-            <a
-              href="https://drive.google.com/file/d/1CduT9B4MXxHoffwnz0qArUKerUA6ovyi/view?usp=sharing"
-              target="_blank"
-              class="Call-to-action-button"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <section id="intro">
-        <div class="about-me-div">
-          <div class="my-image-mobile">
-            <img
-              style="position: relative; top: 8px"
-              src="./img/my-picture.svg"
-            />
           </div>
-          <div class="about-me-desc">
-            <p class="name">
-              Welcome to my world, I'm <span>Faizan Ahmed</span>
-            </p>
-            <h2
-              style="
+        </li>
+
+        <li role="web-menu-item">
+          <a class="pointer about-button"> About </a>
+        </li>
+        <li role="web-menu-item">
+          <a class="pointer journey-button"> Journey </a>
+        </li>
+        <li role="web-menu-item">
+          <a class="pointer project-button"> Projects </a>
+        </li>
+        <li role="web-menu-item">
+          <a class="pointer contact-button"> Contact </a>
+        </li>
+        <li role="web-menu-item">
+          <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank" class="alias">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only"> Linkedin </span>
+          </a>
+        </li>
+        <li role="web-menu-item">
+          <a href="https://github.com/imFaizanAhmed" target="_blank" class="alias">
+            <span class="fa-brands fa-github" aria-hidden="true"></span>
+            <span class="sr-only"> Github </span>
+          </a>
+        </li>
+        <li role="web-menu-item">
+          <a href="https://medium.com/@imfaizanahmed" target="_blank" class="alias">
+            <span class="fa-brands fa-medium" aria-hidden="true"></span>
+            <span class="sr-only"> Medium </span>
+          </a>
+        </li>
+        <li role="web-menu-item">
+          <a href="https://drive.google.com/file/d/1CduT9B4MXxHoffwnz0qArUKerUA6ovyi/view?usp=sharing" target="_blank"
+            class="Call-to-action-button">
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <div class="about-me-div">
+        <div class="my-image-mobile">
+          <img style="position: relative; top: 8px" src="./img/my-picture.svg" />
+        </div>
+        <div class="about-me-desc">
+          <p class="name">
+            Welcome to my world, I'm <span>Faizan Ahmed</span>
+          </p>
+          <h2 style="
                 display: flex;
                 align-items: center;
                 white-space: nowrap;
                 overflow: visible;
-              "
-            >
-              <pre class="prefix">I'm a </pre>
-              <span class="typed-text"></span> <span class="cursor"></span>
-            </h2>
-            <p>
-              with about <span class="highlight">3+ years</span> of industrial
-              experience. I can be relied upon to help your company achieve its
-              goals by providing sustainable and scalable solutions.
-            </p>
-            <p>
-              Currently, I'm working as Mid-level Full-stack developer at
-              <a href="https://antematter.io/" target="_blank">Antematter.io</a
-              >.
-            </p>
-          </div>
+              ">
+            <pre class="prefix">I'm a </pre>
+            <span class="typed-text"></span> <span class="cursor"></span>
+          </h2>
+          <p>
+            with about <span class="highlight">5+ years</span> of industrial
+            experience. I can be relied upon to help your company achieve its
+            goals by providing sustainable and scalable solutions.
+          </p>
+          <p>
+            Currently, I'm working as Mid-level Full-stack developer at
+            <a href="https://veeam.com/" target="_blank">Veeam Software</a>.
+          </p>
         </div>
+      </div>
 
-        <svg
-          width="220"
-          height="71"
-          viewBox="0 0 220 71"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="scroll-background"
-        >
-          <g clip-path="url(#clip0_302_15)">
-            <g filter="url(#filter0_d_302_15)">
-              <path
-                d="M111.703 75.0028C111.703 75.0028 136.795 71.6884 160.626 68.374C184.458 65.0597 207.258 61.7453 202.217 61.7453C177.583 61.7453 163.491 46.2783 151.231 30.8113C138.972 15.3443 128.774 0 111.703 0C94.6311 0 84.3194 15.467 72.0599 30.934C59.8004 46.4011 45.8223 61.8681 21.1887 61.8681C16.262 61.8681 13.8559 61.8681 25.1988 63.4639C36.5417 65.0597 61.519 68.374 111.703 75.0028Z"
-                fill="#222222"
-              />
-              <path
-                d="M111.703 73.9941C63.1748 67.584 38.2546 64.2781 26.4443 62.6287C48.3717 60.5935 61.4598 45.9173 72.8436 31.5552C74.005 30.0899 75.1453 28.6297 76.2723 27.1865C81.1329 20.9623 85.7477 15.0528 90.7573 10.3996C96.896 4.69762 103.51 1 111.703 1C119.897 1 126.483 4.66854 132.591 10.3384C137.568 14.958 142.151 20.8287 146.994 27.0318C148.128 28.4844 149.276 29.9552 150.447 31.4324C161.542 45.43 174.347 59.7216 195.295 62.3255C194.31 62.4838 193.24 62.6518 192.096 62.8285C184.055 64.0701 172.404 65.7264 160.488 67.3836C148.575 69.0405 136.346 70.6974 127.094 71.9402C122.469 72.5616 118.588 73.0794 115.864 73.4418C114.502 73.6231 113.429 73.7655 112.696 73.8625L111.859 73.9734L111.703 73.9941Z"
-                stroke="#C8C8C8"
-                stroke-width="2"
-              />
-            </g>
+      <svg width="220" height="71" viewBox="0 0 220 71" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="scroll-background">
+        <g clip-path="url(#clip0_302_15)">
+          <g filter="url(#filter0_d_302_15)">
+            <path
+              d="M111.703 75.0028C111.703 75.0028 136.795 71.6884 160.626 68.374C184.458 65.0597 207.258 61.7453 202.217 61.7453C177.583 61.7453 163.491 46.2783 151.231 30.8113C138.972 15.3443 128.774 0 111.703 0C94.6311 0 84.3194 15.467 72.0599 30.934C59.8004 46.4011 45.8223 61.8681 21.1887 61.8681C16.262 61.8681 13.8559 61.8681 25.1988 63.4639C36.5417 65.0597 61.519 68.374 111.703 75.0028Z"
+              fill="#222222" />
+            <path
+              d="M111.703 73.9941C63.1748 67.584 38.2546 64.2781 26.4443 62.6287C48.3717 60.5935 61.4598 45.9173 72.8436 31.5552C74.005 30.0899 75.1453 28.6297 76.2723 27.1865C81.1329 20.9623 85.7477 15.0528 90.7573 10.3996C96.896 4.69762 103.51 1 111.703 1C119.897 1 126.483 4.66854 132.591 10.3384C137.568 14.958 142.151 20.8287 146.994 27.0318C148.128 28.4844 149.276 29.9552 150.447 31.4324C161.542 45.43 174.347 59.7216 195.295 62.3255C194.31 62.4838 193.24 62.6518 192.096 62.8285C184.055 64.0701 172.404 65.7264 160.488 67.3836C148.575 69.0405 136.346 70.6974 127.094 71.9402C122.469 72.5616 118.588 73.0794 115.864 73.4418C114.502 73.6231 113.429 73.7655 112.696 73.8625L111.859 73.9734L111.703 73.9941Z"
+              stroke="#C8C8C8" stroke-width="2" />
           </g>
-          <defs>
-            <filter
-              id="filter0_d_302_15"
-              x="13.0776"
-              y="0"
-              width="193.845"
-              height="83.0027"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha"
-              />
-              <feOffset dy="4" />
-              <feGaussianBlur stdDeviation="2" />
-              <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow_302_15"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow_302_15"
-                result="shape"
-              />
-            </filter>
-            <clipPath id="clip0_302_15">
-              <rect width="220" height="71" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+        </g>
+        <defs>
+          <filter id="filter0_d_302_15" x="13.0776" y="0" width="193.845" height="83.0027" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_302_15" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_302_15" result="shape" />
+          </filter>
+          <clipPath id="clip0_302_15">
+            <rect width="220" height="71" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
 
-        <i
-          id="scroll-button"
-          class="fa fa-angle-double-down scroll"
-          id="scroll-icon"
-        ></i>
-      </section>
-      <div class="gradient"></div>
+      <i id="scroll-button" class="fa fa-angle-double-down scroll" id="scroll-icon"></i>
+    </section>
+    <div class="gradient"></div>
 
-      <section id="timeline" style="position: relative">
-        <h2>My journey till now</h2>
-        <ul class="timeline">
-          <li>
-            <div data-aos="dir-l" class="direction-l">
-              <div class="flag-wrapper">
-                <span class="flag"
-                  ><a href="https://antematter.io/" target="_blank"
-                    >Antematter</a
-                  ></span
-                >
-                <span class="time-wrapper"
-                  ><span class="time">May 2024 - present</span></span
-                >
-              </div>
+    <section id="timeline" style="position: relative">
+      <h2>My journey till now</h2>
+      <ul class="timeline">
+        <li>
+          <div data-aos="dir-r" class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="https://veeam.com/" target="_blank">Veeam Software</a></span>
+              <span class="time-wrapper"><span class="time">April 2025 - present</span></span>
+            </div>
 
-              <div
-                class="milestone desc"
-                onclick="toggleDetails(this)"
-                style="--i: 0"
-              >
-                <p><span>Designation:</span> Mid-level Software Engineer</p>
-                <p>
-                  <span>Worked on:</span> Next.js, Astro, Headless UI, Nest.js,
-                  PostgreSQL
-                </p>
-
-                <button class="view-details-btn">
-                  <i class="fas fa-info-circle"></i> View Details
-                </button>
-                <div class="details">
-                  <div class="content">
-                    <ul class="detail-list">
-                      <li>
-                        Developed an interactive frontend for MVP, enabling
-                        businesses to create, manage, and track on-app
-                        campaigns.
-                      </li>
-                      <li>
-                        Integrated reward mechanisms on the frontend, leveraging
-                        <b>Solana</b> and <b>Jupiter</b> wallets to display
-                        real-time cryptocurrency reward distribution to
-                        participants.
-                      </li>
-                      <li>
-                        Supported backend features by collaborating on Nest.js
-                        and PostgreSQL integrations to power campaign work flows
-                        and automate <b>liquidity pool linking</b>.
-                      </li>
-                    </ul>
-                  </div>
+            <div class="milestone desc" onclick="toggleDetails(this)" style="--i: 0">
+              <p><span>Designation:</span> Software Dev Engineer</p>
+              <p>
+                <span>Worked on:</span> VueJs, Golang, Redis, Docker, Kubernetes
+              </p>
+              <button class="view-details-btn">
+                <i class="fas fa-info-circle"></i> View Details
+              </button>
+              <div class="details">
+                <div class="content">
+                  <ul class="detail-list">
+                    <li>
+                      Engineered a Vue.js-based management interface with debounced search and API caching, enabling
+                      seamless real-time filtering and pagination for large-scale datasets.
+                    </li>
+                    <li>
+                      Optimized system security by integrating <b>Role-Based Access Control (RBAC)</b> and deferred
+                      error
+                      handling, ensuring users only interact with authorized data sources and connectors.
+                    </li>
+                    <li>
+                      Architected a scalable state management solution using the <b>Provide/Inject pattern</b> in Vue.js, partnering
+                      with markup specialists to decouple UI components from business logic and improve long-term code
+                      maintainability.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </li>
-          <li>
-            <div data-aos="dir-r" class="direction-r">
-              <div class="flag-wrapper">
-                <span class="flag"
-                  ><a href="https://numuworld.com/" target="_blank"
-                    >Numuworld</a
-                  ></span
-                >
-                <span class="time-wrapper"
-                  ><span class="time">Aug 2022 - May - 2024</span></span
-                >
-              </div>
+          </div>
+        </li>
+        <li>
+          <div data-aos="dir-l" class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="https://antematter.io/" target="_blank">Antematter</a></span>
+              <span class="time-wrapper"><span class="time">May 2024 - April 2025</span></span>
+            </div>
 
-              <div
-                class="milestone desc"
-                onclick="toggleDetails(this)"
-                style="--i: 0"
-              >
-                <p><span>Designation:</span> Full-stack developer</p>
-                <p>
-                  <span>Worked on:</span> ReactJs, NextJs, NodeJs, Sequalize
-                  ORM, MySQL
-                </p>
-                <button class="view-details-btn">
-                  <i class="fas fa-info-circle"></i> View Details
-                </button>
-                <div class="details">
-                  <div class="content">
-                    <ul class="detail-list">
-                      <li>
-                        Enabled brand-influencer communication via email and
-                        WhatsApp APIs, increasing campaign engagement by
-                        <b>30%</b> and brand exposure by <b>20%</b>.
-                      </li>
-                      <li>
-                        Engineered custom group creation, empowering brands to
-                        curate exclusive influencer groups from a database of
-                        <b>9 Million users</b>, leading to higher engagement and
-                        improved ROI.
-                      </li>
-                      <li>
-                        Created an efficient process for brands to import
-                        influencers via TikTok and Instagram URLs, expanding
-                        global collaboration opportunities and increasing the
-                        influencer database by <b>20%</b>.
-                      </li>
-                    </ul>
-                  </div>
+            <div class="milestone desc" onclick="toggleDetails(this)" style="--i: 0">
+              <p><span>Designation:</span> Mid-level Software Engineer</p>
+              <p>
+                <span>Worked on:</span> Next.js, Astro, Headless UI, Nest.js,
+                PostgreSQL
+              </p>
+
+              <button class="view-details-btn">
+                <i class="fas fa-info-circle"></i> View Details
+              </button>
+              <div class="details">
+                <div class="content">
+                  <ul class="detail-list">
+                    <li>
+                      Developed an interactive frontend for MVP, enabling
+                      businesses to create, manage, and track on-app
+                      campaigns.
+                    </li>
+                    <li>
+                      Integrated reward mechanisms on the frontend, leveraging
+                      <b>Solana</b> and <b>Jupiter</b> wallets to display
+                      real-time cryptocurrency reward distribution to
+                      participants.
+                    </li>
+                    <li>
+                      Supported backend features by collaborating on Nest.js
+                      and PostgreSQL integrations to power campaign work flows
+                      and automate <b>liquidity pool linking</b>.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </li>
-          <li>
-            <div data-aos="dir-l" class="direction-l">
-              <div class="flag-wrapper">
-                <span class="flag"
-                  ><a
-                    href="https://www.cognitivehealthintl.com/"
-                    target="_blank"
-                    >Cognitive Healthcare International</a
-                  ></span
-                >
-                <span class="time-wrapper"
-                  ><span class="time">July 2022 - July 2021</span></span
-                >
-              </div>
+          </div>
+        </li>
+        <li>
+          <div data-aos="dir-r" class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="https://numuworld.com/" target="_blank">Numuworld</a></span>
+              <span class="time-wrapper"><span class="time">Aug 2022 - May - 2024</span></span>
+            </div>
 
-              <div
-                class="milestone desc"
-                onclick="toggleDetails(this)"
-                style="--i: 0"
-              >
-                <p><span>Designation:</span> Software Engineer</p>
-                <p>
-                  <span>Worked on:</span> AngularJs, Python, Alchemy ORM, MySQL
-                </p>
-                <button class="view-details-btn">
-                  <i class="fas fa-info-circle"></i> View Details
-                </button>
-                <div class="details">
-                  <div class="content">
-                    <ul class="detail-list">
-                      <li>
-                        Reduced waiting time by <b>15 minutes per patient</b> by
-                        implementing patient-room assignment functionality which
-                        the hospitals subsequently adopted.
-                      </li>
-                      <li>
-                        Collaborated with cross-functional team to refine
-                        physician flow, enhancing appointment scheduling and
-                        overall patient experience, streamlining physician
-                        workflow, and improving satisfaction.
-                      </li>
-                      <li>
-                        Developed subscription features for tailored service
-                        packages for hospitals, driving increased customer
-                        satisfaction and revenue growth, significantly
-                        increasing sign-ups and additional revenue streams.
-                      </li>
-                    </ul>
-                  </div>
+            <div class="milestone desc" onclick="toggleDetails(this)" style="--i: 0">
+              <p><span>Designation:</span> Full-stack developer</p>
+              <p>
+                <span>Worked on:</span> ReactJs, NextJs, NodeJs, Sequalize
+                ORM, MySQL
+              </p>
+              <button class="view-details-btn">
+                <i class="fas fa-info-circle"></i> View Details
+              </button>
+              <div class="details">
+                <div class="content">
+                  <ul class="detail-list">
+                    <li>
+                      Enabled brand-influencer communication via email and
+                      WhatsApp APIs, increasing campaign engagement by
+                      <b>30%</b> and brand exposure by <b>20%</b>.
+                    </li>
+                    <li>
+                      Engineered custom group creation, empowering brands to
+                      curate exclusive influencer groups from a database of
+                      <b>9 Million users</b>, leading to higher engagement and
+                      improved ROI.
+                    </li>
+                    <li>
+                      Created an efficient process for brands to import
+                      influencers via TikTok and Instagram URLs, expanding
+                      global collaboration opportunities and increasing the
+                      influencer database by <b>20%</b>.
+                    </li>
+                  </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div data-aos="dir-l" class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="https://www.cognitivehealthintl.com/" target="_blank">Cognitive Healthcare
+                  International</a></span>
+              <span class="time-wrapper"><span class="time">July 2022 - July 2021</span></span>
+            </div>
 
-              <!-- <div id="numu" class="desc overflow-card">My current employment. Here I am working on <span>React</span> -
+            <div class="milestone desc" onclick="toggleDetails(this)" style="--i: 0">
+              <p><span>Designation:</span> Software Engineer</p>
+              <p>
+                <span>Worked on:</span> AngularJs, Python, Alchemy ORM, MySQL
+              </p>
+              <button class="view-details-btn">
+                <i class="fas fa-info-circle"></i> View Details
+              </button>
+              <div class="details">
+                <div class="content">
+                  <ul class="detail-list">
+                    <li>
+                      Reduced waiting time by <b>15 minutes per patient</b> by
+                      implementing patient-room assignment functionality which
+                      the hospitals subsequently adopted.
+                    </li>
+                    <li>
+                      Collaborated with cross-functional team to refine
+                      physician flow, enhancing appointment scheduling and
+                      overall patient experience, streamlining physician
+                      workflow, and improving satisfaction.
+                    </li>
+                    <li>
+                      Developed subscription features for tailored service
+                      packages for hospitals, driving increased customer
+                      satisfaction and revenue growth, significantly
+                      increasing sign-ups and additional revenue streams.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div id="numu" class="desc overflow-card">My current employment. Here I am working on <span>React</span> -
               <span>NodeJs</span> - <span>MySQL</span>. <span class="text-color">Learn more</span><span
                 id="numu-loadmore"></span><span id="numu-cursor"></span>
               <!-- class="small-cursor" -- >
             </div> -->
+          </div>
+        </li>
+
+        <li>
+          <div data-aos="dir-r" class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag"><a href="http://isb.nu.edu.pk/" target="_blank">FAST University</a></span>
+              <span class="time-wrapper"><span class="time">Aug 2017 - July 2021</span></span>
             </div>
+
+            <div class="milestone desc" onclick="toggleDetails(this)" style="--i: 0">
+              <p><span>Bachelors:</span> Computer Science</p>
+              <p>
+                <span>Courses:</span> Advance Programming, Human Computer
+                Interaction, Artificial Intelligence, Blockchain
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="gradient"></div>
+    <section id="skills">
+      <h2>Skills I learnt and used</h2>
+      <div class="sidebar">
+        <ul class="menu">
+          <li id="backend" class="categories">
+            <div><span>Backend</span></div>
           </li>
-
-          <li>
-            <div data-aos="dir-r" class="direction-r">
-              <div class="flag-wrapper">
-                <span class="flag"
-                  ><a href="http://isb.nu.edu.pk/" target="_blank"
-                    >FAST University</a
-                  ></span
-                >
-                <span class="time-wrapper"
-                  ><span class="time">Aug 2017 - July 2021</span></span
-                >
-              </div>
-
-              <div
-                class="milestone desc"
-                onclick="toggleDetails(this)"
-                style="--i: 0"
-              >
-                <p><span>Bachelors:</span> Computer Science</p>
-                <p>
-                  <span>Courses:</span> Advance Programming, Human Computer
-                  Interaction, Artificial Intelligence, Blockchain
-                </p>
-              </div>
-            </div>
+          <li id="frontend" class="categories">
+            <div><span>Frontend</span></div>
+          </li>
+          <li id="devOps" class="categories">
+            <div><span>DevOps tools</span></div>
+          </li>
+          <li id="tools" class="categories">
+            <div><span>Tools</span></div>
+          </li>
+          <li id="apis" class="categories">
+            <div><span>Third-party APIs</span></div>
           </li>
         </ul>
-      </section>
 
-      <div class="gradient"></div>
-      <section id="skills">
-        <h2>Skills I learnt and used</h2>
-        <div class="sidebar">
-          <ul class="menu">
-            <li id="backend" class="categories">
-              <div><span>Backend</span></div>
-            </li>
-            <li id="frontend" class="categories">
-              <div><span>Frontend</span></div>
-            </li>
-            <li id="devOps" class="categories">
-              <div><span>DevOps tools</span></div>
-            </li>
-            <li id="tools" class="categories">
-              <div><span>Tools</span></div>
-            </li>
-            <li id="apis" class="categories">
-              <div><span>Third-party APIs</span></div>
-            </li>
-          </ul>
-
-          <div id="backend-skills" class="skills-invisible skills">
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/nodejs.svg" alt="nodejs" />
-              <span> NodeJs </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/nestJs.png" alt="tornado" />
-              <span> NestJs </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/tornado.png" alt="tornado" />
-              <span> Tornado </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/sequelize.svg" alt="sequelize" />
-              <span> Sequelize </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <span style="height: 32px">
-                <img
-                  class="skill-logo"
-                  style="aspect-ratio: unset"
-                  src="https://docs.bullmq.io/~gitbook/image?url=https%3A%2F%2F1340146492-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-LUuDmt_xXMfG66Rn1GA%252Ficon%252FHOq80FSJicAlE4bVptC9%252Fbull.png%3Falt%3Dmedia%26token%3D10a2ba71-db1f-4d5c-8787-3dbedc8dd3ce&width=32&dpr=4&quality=100&sign=f6605802&sv=1"
-                  alt="sequelize"
-                />
-              </span>
-              <span> Bull queue </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="img/kafka.png"
-                alt="sequelize"
-                style="rotate: 270deg"
-              />
-              <span> Kafka </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/no icon.svg" alt="icon" />
-              <span> Yup </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/formik.svg" alt="formik" />
-              <span> Formik </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/no icon.svg" alt="icon" />
-              <span> Swagger </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/mysql.svg" alt="mysql" />
-              <span> MySQL </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/elephant.png" alt="mysql" />
-              <span> PostgreSQL </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/firebase.png" alt="mysql" />
-              <span> Firebase </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/mongodb.svg" alt="mysql" />
-              <span> MongoDB </span>
-            </div>
+        <div id="backend-skills" class="skills-invisible skills">
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/nodejs.svg" alt="nodejs" />
+            <span> NodeJs </span>
           </div>
-
-          <div id="frontend-skills" class="skills-invisible">
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/react.svg" alt="nodejs" />
-              <span> ReactJs </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/nextjs.png" alt="nodejs" />
-              <span> NextJs </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/redux.svg" alt="redux" />
-              <span> Redux </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/angularjs.svg" alt="nodejs" />
-              <span> AngularJs </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/html.svg" alt="nodejs" />
-              <span> HTML </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/css.svg" alt="nodejs" />
-              <span> CSS </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/sass.svg" alt="nodejs" />
-              <span> Sass </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/bootstrap.svg" alt="nodejs" />
-              <span> Bootstrap </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/material-ui.svg" alt="nodejs" />
-              <span> Material UI </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/shadcn-ui.png" alt="nodejs" />
-              <span> Shadcn UI </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="img/joiTransparent.png"
-                alt="joiTransparent"
-              />
-              <span> Joi </span>
-            </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/nestJs.png" alt="tornado" />
+            <span> NestJs </span>
           </div>
-
-          <div id="DevOps-skills" class="skills-invisible">
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/amplify.png" alt="nodejs" />
-              <span> AWS Amplify </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="https://i2.pngimg.me/thumb/f/720/m2H7d3b1K9K9i8A0.jpg"
-                alt="nodejs"
-              />
-              <span> AWS EC2 </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <div style="height: 32px">
-                <img
-                  class="skill-logo"
-                  style="aspect-ratio: unset; height: 24px"
-                  src="https://image.pngaaa.com/409/6892409-middle.png"
-                  alt="nodejs"
-                />
-              </div>
-              <span> AWS RDS </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="https://w7.pngwing.com/pngs/550/645/png-transparent-amazon-s3-amazon-com-amazon-web-services-bucket-cloud-computing-amazon-icon-blue-angle-cloud-computing.png"
-                alt="nodejs"
-              />
-              <span> S3 Bucket </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/vercel.png" alt="nodejs" />
-              <span> Vercel </span>
-            </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/tornado.png" alt="tornado" />
+            <span> Tornado </span>
           </div>
-
-          <div id="tools-skills" class="skills-invisible">
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/vs-code.svg" alt="vs-code" />
-              <span> VS code </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/pycharm.svg" alt="pycharm" />
-              <span> Pycharm </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg"
-                alt="git"
-              />
-              <span> Git </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/github.svg" alt="github" />
-              <span> GitHub </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/postman.svg" alt="postman" />
-              <span> Postman </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/insomnia.svg" alt="insomnia" />
-              <span> Insomnia </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/npm.svg" alt="npm" />
-              <span> npm </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/yarn.svg" alt="yarn" />
-              <span> yarn </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/no icon.svg" alt="postman" />
-              <span> Bit cloud </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="img/apollo.svg"
-                alt="apollo"
-                style="width: 4rem; aspect-ratio: 2/1"
-              />
-              <span> Apollo </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="img/mysqlworkbench.svg"
-                alt="workbench"
-              />
-              <span> MySQL Workbench </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/mongodb.svg" alt="mongoDb" />
-              <span> MongoDBCompass </span>
-            </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/sequelize.svg" alt="sequelize" />
+            <span> Sequelize </span>
           </div>
-
-          <div id="apis-skills" class="skills-invisible">
-            <div data-aos="skill" class="skill">
-              <img
-                class="skill-logo"
-                src="img/google-cloud.svg"
-                alt="google cloud"
-              />
-              <span> Google APIs </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/meta.svg" alt="meta" />
-              <span> Meta business </span>
-            </div>
-            <div data-aos="skill" class="skill">
-              <img class="skill-logo" src="img/twitter.svg" alt="twitter" />
-              <span> Tweepy </span>
-            </div>
+          <div data-aos="skill" class="skill">
+            <span style="height: 32px">
+              <img class="skill-logo" style="aspect-ratio: unset"
+                src="https://docs.bullmq.io/~gitbook/image?url=https%3A%2F%2F1340146492-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-LUuDmt_xXMfG66Rn1GA%252Ficon%252FHOq80FSJicAlE4bVptC9%252Fbull.png%3Falt%3Dmedia%26token%3D10a2ba71-db1f-4d5c-8787-3dbedc8dd3ce&width=32&dpr=4&quality=100&sign=f6605802&sv=1"
+                alt="sequelize" />
+            </span>
+            <span> Bull queue </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/kafka.png" alt="sequelize" style="rotate: 270deg" />
+            <span> Kafka </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/no icon.svg" alt="icon" />
+            <span> Yup </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/formik.svg" alt="formik" />
+            <span> Formik </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/no icon.svg" alt="icon" />
+            <span> Swagger </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/mysql.svg" alt="mysql" />
+            <span> MySQL </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/elephant.png" alt="mysql" />
+            <span> PostgreSQL </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/firebase.png" alt="mysql" />
+            <span> Firebase </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/mongodb.svg" alt="mysql" />
+            <span> MongoDB </span>
           </div>
         </div>
-      </section>
 
-      <div class="gradient"></div>
-      <section id="projects">
-        <h2>Projects I'm proud of</h2>
-        <!-- <div id="carousel" class="carousel">
+        <div id="frontend-skills" class="skills-invisible">
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/react.svg" alt="nodejs" />
+            <span> ReactJs </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/nextjs.png" alt="nodejs" />
+            <span> NextJs </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/redux.svg" alt="redux" />
+            <span> Redux </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/angularjs.svg" alt="nodejs" />
+            <span> AngularJs </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/html.svg" alt="nodejs" />
+            <span> HTML </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/css.svg" alt="nodejs" />
+            <span> CSS </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/sass.svg" alt="nodejs" />
+            <span> Sass </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/bootstrap.svg" alt="nodejs" />
+            <span> Bootstrap </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/material-ui.svg" alt="nodejs" />
+            <span> Material UI </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/shadcn-ui.png" alt="nodejs" />
+            <span> Shadcn UI </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/joiTransparent.png" alt="joiTransparent" />
+            <span> Joi </span>
+          </div>
+        </div>
+
+        <div id="DevOps-skills" class="skills-invisible">
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/amplify.png" alt="nodejs" />
+            <span> AWS Amplify </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="https://i2.pngimg.me/thumb/f/720/m2H7d3b1K9K9i8A0.jpg" alt="nodejs" />
+            <span> AWS EC2 </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <div style="height: 32px">
+              <img class="skill-logo" style="aspect-ratio: unset; height: 24px"
+                src="https://image.pngaaa.com/409/6892409-middle.png" alt="nodejs" />
+            </div>
+            <span> AWS RDS </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo"
+              src="https://w7.pngwing.com/pngs/550/645/png-transparent-amazon-s3-amazon-com-amazon-web-services-bucket-cloud-computing-amazon-icon-blue-angle-cloud-computing.png"
+              alt="nodejs" />
+            <span> S3 Bucket </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/vercel.png" alt="nodejs" />
+            <span> Vercel </span>
+          </div>
+        </div>
+
+        <div id="tools-skills" class="skills-invisible">
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/vs-code.svg" alt="vs-code" />
+            <span> VS code </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/pycharm.svg" alt="pycharm" />
+            <span> Pycharm </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg" alt="git" />
+            <span> Git </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/github.svg" alt="github" />
+            <span> GitHub </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/postman.svg" alt="postman" />
+            <span> Postman </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/insomnia.svg" alt="insomnia" />
+            <span> Insomnia </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/npm.svg" alt="npm" />
+            <span> npm </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/yarn.svg" alt="yarn" />
+            <span> yarn </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/no icon.svg" alt="postman" />
+            <span> Bit cloud </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/apollo.svg" alt="apollo" style="width: 4rem; aspect-ratio: 2/1" />
+            <span> Apollo </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/mysqlworkbench.svg" alt="workbench" />
+            <span> MySQL Workbench </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/mongodb.svg" alt="mongoDb" />
+            <span> MongoDBCompass </span>
+          </div>
+        </div>
+
+        <div id="apis-skills" class="skills-invisible">
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/google-cloud.svg" alt="google cloud" />
+            <span> Google APIs </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/meta.svg" alt="meta" />
+            <span> Meta business </span>
+          </div>
+          <div data-aos="skill" class="skill">
+            <img class="skill-logo" src="img/twitter.svg" alt="twitter" />
+            <span> Tweepy </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gradient"></div>
+    <section id="projects">
+      <h2>Projects I'm proud of</h2>
+      <!-- <div id="carousel" class="carousel">
           <div
             class="slide"
             style="background-image: url('img/projects/golf project.png')"
@@ -725,7 +620,7 @@
             ></i>
         </div> -->
 
-        <!-- <div class="subtitle">
+      <!-- <div class="subtitle">
           <svg
             fill="#000000"
             width="800px"
@@ -738,196 +633,163 @@
           Industrial Projects
         </div> -->
 
-        <article class="reverse">
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>Humming Bird</h3>
-            <p class="blackbox">
-              Developed a blockchain-powered marketing platform with the team,
-              enabling businesses to create campaigns, manage rewards, and
-              automate cryptocurrency distributions securely and efficiently.
-              You can view project
-              <a href="https://Hummingbirdco.io/" target="_blank" class="alias"
-                >here</a
-              >.
-            </p>
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>NextJs</li>
-              <li>HeadlessUI</li>
-              <li>React-hook-form</li>
-              <li>NestJs</li>
-              <li>Raydium</li>
-            </ul>
-          </div>
-          <!-- <img src="img/projects/transaction project.svg" alt="transactions" /> -->
-          <img src="img/projects/thePlatform.svg" alt="transactions" />
-        </article>
-        <article>
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>Hypo Handler</h3>
-            <p class="blackbox">
-              Crafted a tool that designed to help individuals identify new job
-              opportunities by analyzing their past work experiences. This is
-              particularly useful for people who are changing careers or have
-              experienced an injury that limits their previous job functions.
-            </p>
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>ReactJs</li>
-              <li>IndexedDB</li>
-              <li>Formik</li>
-              <li>Axios</li>
-            </ul>
-          </div>
-          <!-- <img src="img/projects/transaction project.svg" alt="transactions" /> -->
-          <img src="img/projects/hypo-handler.png" alt="transactions" />
-        </article>
-        <article class="reverse">
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>Golf Event Manager</h3>
-            <p class="blackbox">
-              Developed a web application catering to golf enthusiasts, enabling
-              event creation and discovery with integrated
-              <b> Google Maps API </b> for event location visualization.
-              Implemented a user-friendly interface for real-time event
-              tracking, score submission, and progress monitoring through
-              interactive charts.
-            </p>
+      <article class="reverse">
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Humming Bird</h3>
+          <p class="blackbox">
+            Developed a blockchain-powered marketing platform with the team,
+            enabling businesses to create campaigns, manage rewards, and
+            automate cryptocurrency distributions securely and efficiently.
+            You can view project
+            <a href="https://Hummingbirdco.io/" target="_blank" class="alias">here</a>.
+          </p>
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>NextJs</li>
+            <li>HeadlessUI</li>
+            <li>React-hook-form</li>
+            <li>NestJs</li>
+            <li>Raydium</li>
+          </ul>
+        </div>
+        <!-- <img src="img/projects/transaction project.svg" alt="transactions" /> -->
+        <img src="img/projects/thePlatform.svg" alt="transactions" />
+      </article>
+      <article>
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Hypo Handler</h3>
+          <p class="blackbox">
+            Crafted a tool that designed to help individuals identify new job
+            opportunities by analyzing their past work experiences. This is
+            particularly useful for people who are changing careers or have
+            experienced an injury that limits their previous job functions.
+          </p>
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>ReactJs</li>
+            <li>IndexedDB</li>
+            <li>Formik</li>
+            <li>Axios</li>
+          </ul>
+        </div>
+        <!-- <img src="img/projects/transaction project.svg" alt="transactions" /> -->
+        <img src="img/projects/hypo-handler.png" alt="transactions" />
+      </article>
+      <article class="reverse">
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Golf Event Manager</h3>
+          <p class="blackbox">
+            Developed a web application catering to golf enthusiasts, enabling
+            event creation and discovery with integrated
+            <b> Google Maps API </b> for event location visualization.
+            Implemented a user-friendly interface for real-time event
+            tracking, score submission, and progress monitoring through
+            interactive charts.
+          </p>
 
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>NextJs</li>
-              <li>Ant Design</li>
-              <li>Tailwinds</li>
-              <li>React Query</li>
-              <li>Google Maps</li>
-            </ul>
-          </div>
-          <!-- <img src="img/projects/golf project.png" alt="golf project" /> -->
-          <div class="carousel-wrapper">
-            <div id="carousel" class="golf-project carousel">
-              <div
-                class="slide"
-                style="background-image: url('img/projects/golf project.png')"
-              ></div>
-              <div
-                class="slide"
-                style="background-image: url('img/projects/event\ page.png')"
-              ></div>
-              <div
-                class="slide"
-                style="
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>NextJs</li>
+            <li>Ant Design</li>
+            <li>Tailwinds</li>
+            <li>React Query</li>
+            <li>Google Maps</li>
+          </ul>
+        </div>
+        <!-- <img src="img/projects/golf project.png" alt="golf project" /> -->
+        <div class="carousel-wrapper">
+          <div id="carousel" class="golf-project carousel">
+            <div class="slide" style="background-image: url('img/projects/golf project.png')"></div>
+            <div class="slide" style="background-image: url('img/projects/event\ page.png')"></div>
+            <div class="slide" style="
                   background-image: url('img/projects/calendar\ event.png');
-                "
-              ></div>
-            </div>
-            <!-- Add more slides as needed -->
-            <i
-              id="prevBtn"
-              class="fa-regular fa-circle-left fa-xl"
-              style="
+                "></div>
+          </div>
+          <!-- Add more slides as needed -->
+          <i id="prevBtn" class="fa-regular fa-circle-left fa-xl" style="
                 z-index: 10;
                 position: absolute;
                 top: 50%;
                 left: 20px;
                 cursor: pointer;
-              "
-            ></i>
-            <i
-              id="nextBtn"
-              class="fa-regular fa-circle-right fa-xl"
-              style="
+              "></i>
+          <i id="nextBtn" class="fa-regular fa-circle-right fa-xl" style="
                 z-index: 10;
                 position: absolute;
                 top: 50%;
                 right: 20px;
                 float: right;
                 cursor: pointer;
-              "
-            ></i>
-          </div>
-        </article>
-        <article>
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>LocalSeedPro</h3>
-            <p class="blackbox">
-              Developed the frontend for an AI application predicting optimal
-              seeds for planting based on location and climate data. Crafted a
-              responsive UI for data visualization, enabling user-friendly
-              access to predictive analytics.
-            </p>
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>React</li>
-              <li>Material-ui</li>
-              <li>Formik</li>
-            </ul>
-          </div>
-          <!-- <img src="img/projects/localSeedPro.jpeg" alt="localSeedPro" /> -->
-          <div class="carousel-wrapper">
-            <div id="carousel" class="localSeedPro carousel">
-              <div
-                class="slide"
-                style="background-image: url('img/projects/localSeedPro.jpeg')"
-              ></div>
-              <div
-                class="slide"
-                style="
+              "></i>
+        </div>
+      </article>
+      <article>
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>LocalSeedPro</h3>
+          <p class="blackbox">
+            Developed the frontend for an AI application predicting optimal
+            seeds for planting based on location and climate data. Crafted a
+            responsive UI for data visualization, enabling user-friendly
+            access to predictive analytics.
+          </p>
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>React</li>
+            <li>Material-ui</li>
+            <li>Formik</li>
+          </ul>
+        </div>
+        <!-- <img src="img/projects/localSeedPro.jpeg" alt="localSeedPro" /> -->
+        <div class="carousel-wrapper">
+          <div id="carousel" class="localSeedPro carousel">
+            <div class="slide" style="background-image: url('img/projects/localSeedPro.jpeg')"></div>
+            <div class="slide" style="
                   background-image: url('img/projects/seed\ prediction\ card.png');
-                "
-              ></div>
-            </div>
-            <!-- Add more slides as needed -->
-            <i
-              id="project2PrevBtn"
-              class="fa-regular fa-circle-left fa-xl"
-              style="
+                "></div>
+          </div>
+          <!-- Add more slides as needed -->
+          <i id="project2PrevBtn" class="fa-regular fa-circle-left fa-xl" style="
                 z-index: 10;
                 position: absolute;
                 top: 50%;
                 left: 20px;
                 cursor: pointer;
-              "
-            ></i>
-            <i
-              id="project2NextBtn"
-              class="fa-regular fa-circle-right fa-xl"
-              style="
+              "></i>
+          <i id="project2NextBtn" class="fa-regular fa-circle-right fa-xl" style="
                 z-index: 10;
                 position: absolute;
                 top: 50%;
                 right: 20px;
                 float: right;
                 cursor: pointer;
-              "
-            ></i>
-          </div>
-        </article>
-        <article class="reverse">
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>Transactions</h3>
-            <p class="blackbox">
-              Developed a transactions project allowing users to upload CSV
-              files for easy data display in tables and charts. The reports
-              provided valuable analytics, helping users make informed
-              decisions. I worked as frontend developer in this project.
-            </p>
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>React</li>
-              <li>Bootstrap</li>
-              <li>Styled Components</li>
-            </ul>
-          </div>
-          <!-- <img src="img/projects/transaction project.svg" alt="transactions" /> -->
-          <img src="img/trans.png" alt="transactions" />
-        </article>
-        <!-- <div class="subtitle">
+              "></i>
+        </div>
+      </article>
+      <article class="reverse">
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Transactions</h3>
+          <p class="blackbox">
+            Developed a transactions project allowing users to upload CSV
+            files for easy data display in tables and charts. The reports
+            provided valuable analytics, helping users make informed
+            decisions. I worked as frontend developer in this project.
+          </p>
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Styled Components</li>
+          </ul>
+        </div>
+        <!-- <img src="img/projects/transaction project.svg" alt="transactions" /> -->
+        <img src="img/trans.png" alt="transactions" />
+      </article>
+      <!-- <div class="subtitle">
           <svg
             fill="#000000"
             width="800px"
@@ -939,217 +801,174 @@
           </svg>
           Personal Projects
         </div> -->
-        <article>
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>Web Portfolio</h3>
-            <p class="blackbox">
-              A single page web application. It is created to showcase my
-              skills, and knowledge about web development basis. You can view
-              the source code
-              <a
-                href="https://github.com/imFaizanAhmed/imfaizanahmed.github.io"
-                target="_blank"
-                class="alias"
-                >here</a
-              >.
-            </p>
+      <article>
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Web Portfolio</h3>
+          <p class="blackbox">
+            A single page web application. It is created to showcase my
+            skills, and knowledge about web development basis. You can view
+            the source code
+            <a href="https://github.com/imFaizanAhmed/imfaizanahmed.github.io" target="_blank" class="alias">here</a>.
+          </p>
 
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Aos.js</li>
-            </ul>
-          </div>
-          <img src="img/projects/portfolio.svg" alt="Portfolio" />
-        </article>
-        <article class="reverse">
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>Media Pegham</h3>
-            <p class="blackbox">
-              MediaPegham is a website that focuses on leveraging AI to enhance
-              social media posts. Users can input a brief description or key
-              details about their post, choose their preferred social media
-              platform, and select a specific vibe for their content. The site
-              then generates a post based on these inputs. It's designed to
-              simplify and enhance the process of creating engaging content for
-              various social media platforms by using AI technology.<br />
-              View source code
-              <a
-                href="https://github.com/imFaizanAhmed/media-pegham"
-                target="_blank"
-                class="alias"
-                >here</a
-              >. View project
-              <a
-                href="https://media-pegham.vercel.app/"
-                target="_blank"
-                class="alias"
-                >here</a
-              >.
-            </p>
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>NextJs</li>
-              <li>Typescript</li>
-              <li>ShadcnUI</li>
-              <li>LangChain</li>
-              <li>Openai Edge</li>
-            </ul>
-          </div>
-          <img src="img/projects/media pegham.png" alt="No image found" />
-        </article>
-        <article>
-          <div class="text">
-            <!-- <h4>Latest Project</h4> -->
-            <h3>Find Trends</h3>
-            <p class="blackbox">
-              A single page real-time customers feedback application. It gets
-              tweets about the product using TweepyAPI and applies sentiment
-              analysis to predict the people's views. It stores the tweets and
-              their sentiments on database for future use. <br />
-              View this project
-              <a
-                href="https://github.com/imFaizanAhmed/find-trend"
-                target="_blank"
-                class="alias"
-                >here</a
-              >.
-            </p>
-            <h4>Technologies used include</h4>
-            <ul>
-              <li>Django</li>
-              <li>Bootstrap</li>
-              <li>TweepyAPI</li>
-              <li>Sqlite</li>
-            </ul>
-          </div>
-          <img src="img/projects/no image.svg" alt="No image found" />
-        </article>
-      </section>
-      <!-- <div class="gradient"></div> -->
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Aos.js</li>
+          </ul>
+        </div>
+        <img src="img/projects/portfolio.svg" alt="Portfolio" />
+      </article>
+      <article class="reverse">
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Media Pegham</h3>
+          <p class="blackbox">
+            MediaPegham is a website that focuses on leveraging AI to enhance
+            social media posts. Users can input a brief description or key
+            details about their post, choose their preferred social media
+            platform, and select a specific vibe for their content. The site
+            then generates a post based on these inputs. It's designed to
+            simplify and enhance the process of creating engaging content for
+            various social media platforms by using AI technology.<br />
+            View source code
+            <a href="https://github.com/imFaizanAhmed/media-pegham" target="_blank" class="alias">here</a>. View project
+            <a href="https://media-pegham.vercel.app/" target="_blank" class="alias">here</a>.
+          </p>
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>NextJs</li>
+            <li>Typescript</li>
+            <li>ShadcnUI</li>
+            <li>LangChain</li>
+            <li>Openai Edge</li>
+          </ul>
+        </div>
+        <img src="img/projects/media pegham.png" alt="No image found" />
+      </article>
+      <article>
+        <div class="text">
+          <!-- <h4>Latest Project</h4> -->
+          <h3>Find Trends</h3>
+          <p class="blackbox">
+            A single page real-time customers feedback application. It gets
+            tweets about the product using TweepyAPI and applies sentiment
+            analysis to predict the people's views. It stores the tweets and
+            their sentiments on database for future use. <br />
+            View this project
+            <a href="https://github.com/imFaizanAhmed/find-trend" target="_blank" class="alias">here</a>.
+          </p>
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>Django</li>
+            <li>Bootstrap</li>
+            <li>TweepyAPI</li>
+            <li>Sqlite</li>
+          </ul>
+        </div>
+        <img src="img/projects/no image.svg" alt="No image found" />
+      </article>
+    </section>
+    <!-- <div class="gradient"></div> -->
 
-      <div class="section-hightligh">
-        <svg
-          preserveAspectRatio="none"
-          viewBox="0 0 100 102"
-          height="75"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          class="svgcolor-light"
-        >
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="var(--gradient-color)" />
-            <stop offset="100%" stop-color="var(--gradient-color-shade2)" />
-          </linearGradient>
-          <!-- stroke="url(#gradient)" -->
-          <path d="M0 0 L50 100 L100 0 Z" class="curve"></path>
-        </svg>
+    <div class="section-hightligh">
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        class="svgcolor-light">
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="var(--gradient-color)" />
+          <stop offset="100%" stop-color="var(--gradient-color-shade2)" />
+        </linearGradient>
+        <!-- stroke="url(#gradient)" -->
+        <path d="M0 0 L50 100 L100 0 Z" class="curve"></path>
+      </svg>
 
-        <section id="contact">
-          <h2>Get in touch</h2>
-          <div class="contact">
-            <p>
-              An attitude of gratitude opens the doors to endless possibilities.
-              Thank you for visiting my Portfolio. Let's connect
-            </p>
-            <div>
-              <input type="text" placeholder="Name" id="sender-name" />
-              <input type="email" placeholder="Email" id="sender-email" />
-              <textarea placeholder="Message" id="send-body"></textarea>
-              <div style="margin-top: 2rem">
-                <!-- href="mailto:imfaizanahmed6@gmail.com" -->
-                <input
-                  type="submit"
-                  onclick="sendMail()"
-                  class="Call-to-action-button"
-                  style="font-size: 80%"
-                  value="Email me"
-                />
-              </div>
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <div class="contact">
+          <p>
+            An attitude of gratitude opens the doors to endless possibilities.
+            Thank you for visiting my Portfolio. Let's connect
+          </p>
+          <div>
+            <input type="text" placeholder="Name" id="sender-name" />
+            <input type="email" placeholder="Email" id="sender-email" />
+            <textarea placeholder="Message" id="send-body"></textarea>
+            <div style="margin-top: 2rem">
+              <!-- href="mailto:imfaizanahmed6@gmail.com" -->
+              <input type="submit" onclick="sendMail()" class="Call-to-action-button" style="font-size: 80%"
+                value="Email me" />
             </div>
           </div>
-        </section>
-      </div>
-
-      <div class="gradient"></div>
-
-      <footer>
-        <div>Faizan Ahmed - Fullstack Developer</div>
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/faizanahmed99/"
-              target="_blank"
-            >
-              <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
-              <span class="sr-only"> Linkedin </span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/imFaizanAhmed" target="_blank">
-              <span class="fa-brands fa-github" aria-hidden="true"></span>
-              <span class="sr-only"> Github </span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.com/@imfaizanahmed"
-              target="_blank"
-              class="alias"
-            >
-              <span class="fa-brands fa-medium" aria-hidden="true"></span>
-              <span class="sr-only"> Medium </span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:imfaizanahmed6@gmail.com">
-              <span class="fa-solid fa-envelope" aria-hidden="true"></span>
-              <span class="sr-only"> Email </span>
-            </a>
-          </li>
-        </ul>
-        <p><small>&copy; 2021 Faizan Ahmed. All rights reserved.</small></p>
-      </footer>
+        </div>
+      </section>
     </div>
 
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/animation.css" rel="stylesheet" />
-    <script src="js/typing-effect.js"></script>
-    <script src="js/scroll-to-view.js"></script>
-    <script src="js/change-theme.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/timeline.js"></script>
-    <script src="js/show-detail.js"></script>
-    <script src="js/uni-journey.js"></script>
-    <script src="js/inpage-nav.js"></script>
-    <script src="js/send-mail.js"></script>
-    <!-- ! deprecated -->
-    <!-- <script src="js/numu-journey.js"></script>
-  <script src="js/chi-journey.js"></script> -->
-    <script src="js/change-skills.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap"
-      rel="stylesheet"
-    />
+    <div class="gradient"></div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 400,
-        // mirror: true,
-        delay: 100,
-        offset: 10,
-      });
-    </script>
-  </body>
+    <footer>
+      <div>Faizan Ahmed - Fullstack Developer</div>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/faizanahmed99/" target="_blank">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+            <span class="sr-only"> Linkedin </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/imFaizanAhmed" target="_blank">
+            <span class="fa-brands fa-github" aria-hidden="true"></span>
+            <span class="sr-only"> Github </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@imfaizanahmed" target="_blank" class="alias">
+            <span class="fa-brands fa-medium" aria-hidden="true"></span>
+            <span class="sr-only"> Medium </span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:imfaizanahmed6@gmail.com">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="sr-only"> Email </span>
+          </a>
+        </li>
+      </ul>
+      <p><small>&copy; 2021 Faizan Ahmed. All rights reserved.</small></p>
+    </footer>
+  </div>
+
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/animation.css" rel="stylesheet" />
+  <script src="js/typing-effect.js"></script>
+  <script src="js/scroll-to-view.js"></script>
+  <script src="js/change-theme.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/show-detail.js"></script>
+  <script src="js/uni-journey.js"></script>
+  <script src="js/inpage-nav.js"></script>
+  <script src="js/send-mail.js"></script>
+  <!-- ! deprecated -->
+  <!-- <script src="js/numu-journey.js"></script>
+  <script src="js/chi-journey.js"></script> -->
+  <script src="js/change-skills.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 400,
+      // mirror: true,
+      delay: 100,
+      offset: 10,
+    });
+  </script>
+</body>
+
 </html>
