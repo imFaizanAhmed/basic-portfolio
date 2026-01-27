@@ -50,7 +50,6 @@ function createBlogCard(blog, index) {
   const link = blog.link;
   const pubDate = formatDate(blog.pubDate);
   const thumbnail = extractThumbnail(blog.content, blog.thumbnail);
-  console.log("thumbnail", thumbnail);
   const excerpt = extractExcerpt(blog.description || blog.content);
   const readTime = estimateReadTime(blog.content);
 
@@ -89,16 +88,26 @@ function formatDate(dateString) {
 
 function extractThumbnail(content, defaultThumbnail) {
   // Try to extract the first image from the content
-  console.log('defaultThumbnail', defaultThumbnail);
   const imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
-  console.log("imgMatch", imgMatch);
+  
+  let imageUrl = null;
+  
   if (imgMatch && imgMatch[1]) {
-    return imgMatch[1];
+    imageUrl = imgMatch[1];
+  } else if (defaultThumbnail) {
+    imageUrl = defaultThumbnail;
   }
-  // Fallback to the thumbnail provided by the feed
-  if (defaultThumbnail) {
-    return defaultThumbnail;
+  
+  // If we have a Medium image URL, proxy it to avoid CORS issues
+  if (imageUrl && imageUrl.includes("miro.medium.com")) {
+    // Use wsrv.nl (free image proxy) to bypass CORS
+    return `https://wsrv.nl/?url=${encodeURIComponent(imageUrl)}&w=400&h=250&fit=cover`;
   }
+  
+  if (imageUrl) {
+    return imageUrl;
+  }
+  
   // Final fallback
   return "img/image-not-found-icon.svg";
 }
