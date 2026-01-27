@@ -88,7 +88,10 @@ function formatDate(dateString) {
 
 function extractThumbnail(content, defaultThumbnail) {
   // Try to extract the first image from the content
+  console.log("content", content);
+  console.log('defaultThumbnail', defaultThumbnail);
   const imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
+  console.log("imgMatch", imgMatch);
   if (imgMatch && imgMatch[1]) {
     return imgMatch[1];
   }
