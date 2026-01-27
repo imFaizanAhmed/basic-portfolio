@@ -50,6 +50,7 @@ function createBlogCard(blog, index) {
   const link = blog.link;
   const pubDate = formatDate(blog.pubDate);
   const thumbnail = extractThumbnail(blog.content, blog.thumbnail);
+  console.log("thumbnail", thumbnail);
   const excerpt = extractExcerpt(blog.description || blog.content);
   const readTime = estimateReadTime(blog.content);
 
@@ -88,7 +89,6 @@ function formatDate(dateString) {
 
 function extractThumbnail(content, defaultThumbnail) {
   // Try to extract the first image from the content
-  console.log("content", content);
   console.log('defaultThumbnail', defaultThumbnail);
   const imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
   console.log("imgMatch", imgMatch);
