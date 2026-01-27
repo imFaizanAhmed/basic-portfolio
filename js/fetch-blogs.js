@@ -56,7 +56,7 @@ function createBlogCard(blog, index) {
   return `
     <article class="blog-card" data-aos="fade-up" data-aos-delay="${index * 100}">
       <div class="blog-image">
-        <img src="${thumbnail}" alt="${title}" onerror="this.src='img/image-not-found-icon.svg'" />
+        <img src="${thumbnail}" crossorigin="anonymous" alt="${title}" onerror="img/image-not-found-icon.svg" />
       </div>
       <div class="blog-content">
         <div class="blog-meta">
