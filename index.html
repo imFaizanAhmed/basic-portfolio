@@ -26,6 +26,9 @@
     <a class="pointer journey-button">
       <li>Journey</li>
     </a>
+    <a class="pointer blogs-button">
+      <li>Blogs</li>
+    </a>
     <a class="pointer project-button">
       <li>Projects</li>
     </a>
@@ -75,6 +78,9 @@
         </li>
         <li role="web-menu-item">
           <a class="pointer journey-button"> Journey </a>
+        </li>
+        <li role="web-menu-item">
+          <a class="pointer blogs-button"> Blogs </a>
         </li>
         <li role="web-menu-item">
           <a class="pointer project-button"> Projects </a>
@@ -592,6 +598,26 @@
     </section>
 
     <div class="gradient"></div>
+    <section id="blogs">
+      <h2>Blogs I've Published</h2>
+      
+      <div class="blogs-container" id="blogs-container">
+        <!-- Blog cards will be loaded dynamically -->
+        <div class="blogs-loading">
+          <i class="fa-solid fa-spinner fa-spin"></i>
+          <span>Loading blogs...</span>
+        </div>
+      </div>
+
+      <div class="blogs-view-all">
+        <a href="https://medium.com/@imfaizanahmed" target="_blank" class="Call-to-action-button">
+          <i class="fa-brands fa-medium"></i>
+          View All on Medium
+        </a>
+      </div>
+    </section>
+
+    <div class="gradient"></div>
     <section id="projects">
       <h2>Projects I'm proud of</h2>
       <!-- <div id="carousel" class="carousel">
@@ -951,6 +977,7 @@
   <script src="js/uni-journey.js"></script>
   <script src="js/inpage-nav.js"></script>
   <script src="js/send-mail.js"></script>
+  <script src="js/fetch-blogs.js"></script>
   <!-- ! deprecated -->
   <!-- <script src="js/numu-journey.js"></script>
   <script src="js/chi-journey.js"></script> -->
